@@ -1,0 +1,229 @@
+.body.page__personal-area {
+  margin: rem(60px) 0 0 0;
+  @include tablet {
+    margin: 0 0 rem(45px) 0;
+  }
+}
+.page__personal-area {
+  .container {
+    @include mobile {
+      padding: 0 0 0 0;
+    }
+  }
+}
+.body_page__personal-area-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+  .page-personal__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 65px auto auto;
+    grid-template-areas:
+      "profile courses"
+      "certificate certificate"
+      "offers-header offers-header"
+      "offers-description offers-description"
+      "mobile-app-banner mobile-app-banner";
+    gap: 24px;
+    @include tablet_small {
+      grid-template-rows: auto auto auto 65px auto;
+      grid-template-areas:
+        "profile profile"
+        "courses courses"
+        "certificate certificate"
+        "offers-header offers-header"
+        "offers-description offers-description"
+        "mobile-app-banner mobile-app-banner";
+    }
+    @include mobile {
+      gap: 12px;
+    }
+    .content__profile-info,
+    .content__courses-info,
+    .content__certificate-info,
+    .content__offers-header,
+    .content__offers-description {
+      background-color: $white;
+      border-radius: rem(20px);
+      padding: rem(20px) rem(24px);
+      display: flex;
+      flex-direction: column;
+      .info__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: rem(20px);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        span {
+          font-size: rem(20px);
+          font-weight: 700;
+          line-height: 120%;
+        }
+        a {
+          color: black;
+          line-height: 125%;
+          display: flex;
+          align-items: center;
+          &:hover {
+            color: #307EBE;
+          }
+        }
+      }
+      .info__content {
+        margin-top: rem(24px);
+        @include mobile {
+          margin-top: rem(20px);
+        }
+      }
+      @include mobile {
+        border-radius: 0;
+      }
+    }
+    .content__profile-info {
+      grid-area: profile;
+      .info__content {
+        display: flex;
+        .content__desc {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          p {
+            text-align: center;
+          }
+          margin-right: 32px;
+        }
+        .content__graph {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    }
+    .content__courses-info {
+      grid-area: courses;
+      .info__content {
+        p {
+          font-size: rem(20px);
+          line-height: 120%;
+          margin-bottom: rem(16px);
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .content__certificate-info {
+      grid-area: certificate;
+      .info__header {
+        @include mobile {
+          flex-direction: column;
+          align-items: flex-start;
+          a {
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+    .content__offers-header {
+      grid-area: offers-header;
+      font-size: rem(20px);
+      font-weight: 700;
+      line-height: 120%;
+    }
+    .content__offers-description {
+      grid-area: offers-description;
+      padding: 30px 35px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      @include tablet {
+        grid-template-columns: 1fr 1fr;
+        padding: 12px 0;
+        background-color: transparent;
+      }
+      @include mobile {
+        grid-template-columns: 1fr;
+        padding: 12px 15px;
+      }
+    }
+    .content__container-banner {
+      grid-area: mobile-app-banner;
+      @include mobile {
+        padding: 0 15px;
+      }
+      .content__mobile-app-banner {
+        padding: 60px 63px;
+        border-radius: rem(20px);
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        @include tablet_small {
+          padding: 20px 37px;
+        }
+        img {
+          @include imgContain;
+          &.mobile-app-banner__img-mob {
+            display: none;
+          }
+          @include tablet_small {
+            &.mobile-app-banner__img-mob {
+              display: block;
+            }
+            &.mobile-app-banner__img {
+              display: none;
+            }
+          }
+        }
+        .mobile-app-banner__desc {
+          z-index: 1;
+          width: 68%;
+          @include tablet_small {
+            width: 100%;
+            text-align: center;
+          }
+          span {
+            color: $white;
+            font-size: rem(40px);
+            font-weight: 700;
+            line-height: 125%;
+            @include mobile {
+              font-size: rem(30px);
+            }
+          }
+          p {
+            color: $white;
+            margin-top: 20px;
+            font-size: rem(18px);
+            line-height: 133%;
+          }
+        }
+        .mobile-app-banner__btns {
+          z-index: 1;
+          margin-top: rem(48px);
+          display: flex;
+          align-items: center;
+          @include tablet_small {
+            flex-direction: column;
+            a {
+              width: 100%;
+              &:last-child {
+                margin-left: 0 !important;
+                margin-top: 24px;
+              }
+            }
+          }
+          a {
+            &:last-child {
+              margin-left: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

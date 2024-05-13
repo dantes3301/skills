@@ -1,0 +1,44 @@
+.page__selection_menu{
+    display: flex;
+    margin: rem(54px) 0 0 0;
+    padding: rem(9px) 0 rem(9px) 0;
+    @include tablet{
+        margin: 0 0 0 0;
+        justify-content: center;
+    }
+}
+.link__num_page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(34px);
+    height: rem(34px);
+    border-radius: 50%;
+    & a{
+        color: $black;
+        font-size: 15px;
+        &:hover{
+            color: $blueBase;
+        }
+    }
+}
+.active__page{
+    background-color: $blue;
+    width: rem(34px);
+    height: rem(34px);
+    border-radius: 50%;
+    & a{
+        color: $white;
+        font-size: 15px;
+        &:hover{
+            color: $white;
+        }
+    }
+}
+.catalog__course_info{
+    & .sorting{
+        @include tablet{
+            display: none;
+        }
+    }
+}

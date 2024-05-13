@@ -1,0 +1,903 @@
+.map__link{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: rem(120px) 0 0 0;
+    & a{
+        font-size: rem(32px);
+        // font-style: bold;
+        text-align: center;
+        margin: 0 0 rem(20px);
+    }
+}
+.index__header{
+    background-color: #307EBE;
+    width: 100%;
+    height: rem(807px);
+    margin: rem(-25px) 0 0 0;
+    position: relative;
+    transition: 0.7s;
+    &.active{
+        background: #C02D2D;
+        & .btn__white{
+            color: #C02D2D;
+            &:hover{
+                background: rgba(0, 0, 0, 0);
+                color: $white;
+                border: 1px solid $white;
+            }
+        }
+    }
+    @include tablet{
+        height: rem(570px);
+    }
+}
+.btn.index{
+    // position: absolute;
+    // z-index: 99;
+    // height: max-content;
+    
+    & a{
+        position: absolute;
+        z-index: 99;
+        border: none;
+        
+    }
+    @include tablet{
+        display: flex;
+        justify-content: center;
+    }
+}
+.index__header_container{
+    display: flex;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.body.index{
+    margin: 0 0 0 0;
+}
+.index__btn_position_dir{
+    display: flex;
+    justify-content: flex-end;
+}
+.index__header_svg{
+    // max-width: rem(1920px);
+    width: 100%;
+    height: rem(450px);
+    position: absolute;
+    bottom: rem(-2px);
+    z-index: 0;
+    // top: rem(-100px);
+    background: url('../images/index__back.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    // background;
+    @include desktop_huge{
+        background-size: 110% auto;
+    }
+    @include desktop_small{
+        background-size: 125% auto;
+        background-position: 40% 100%;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+.index__header_text_btn{
+    max-width: rem(599px);
+    width: 100%;
+    @include tablet {
+        margin: 0 auto;
+    }
+    & .btn__white{
+        &:hover{
+            background: rgba(0, 0, 0, 0);
+            color: $white;
+            border: 1px solid $white;
+        }
+    }
+}
+.index__header_text{
+    & p{
+        font-weight: 700;
+        font-size: rem(52px);
+        line-height: rem(62px);
+        color: $white;
+    }
+    @include tablet{
+        width: rem(330px);
+        margin: 10px auto 20px auto;
+        & p{
+            text-align: center;
+            font-weight: 700;
+            font-size: rem(28px);
+            line-height: rem(36px);
+        }
+    }
+}
+.index__header_text_btn{
+    padding: rem(116px) 0 0 0;
+    @include tablet{
+        padding: 350px 0 0 0;
+        & .btn.index{
+            margin: auto auto;
+            & a{
+                margin: auto;
+            }
+        }
+    }
+  }
+
+.index__swiper_container_one{
+    overflow: hidden;
+    margin: rem(-110px) 0 0 0;
+    @include tablet{
+        overflow-x: hidden;
+    }
+    @include tablet{
+        display: none;
+    }
+    .index__btn_position_dir{
+        margin: rem(30px) 0 0 0;
+    }
+    & .swiper {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        padding: 0 0 rem(60px) 0;
+    }
+    & a {
+        color: black;
+    }
+      & .swiper-slide {
+        font-size: 18px;
+        position: static;
+        width: rem(290px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        margin: 0 40px 0 0 ;
+         min-width: rem(290px);
+        & .course_dir_container{
+            min-width: rem(290px);
+            width: rem(290px);
+            
+            display: inline-block;
+            @include tablet{
+                max-width: 100%;
+                width: 100%;
+                margin: 0 0 rem(30px) 0;
+            }
+        }
+    
+      }
+        
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+    
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      & .index__btn_position_dir{
+        & .btn.blue{
+            color: #008cff;
+            &:hover{
+                color: $white;
+            }
+        }
+      }
+}
+.mySwiper_two {
+    & .swiper-wrapper{
+        padding: 0 0 rem(40px) 0;
+        & .school__container {
+            width: 390px;
+            height: 157px;
+        }
+    }
+    .swiper-slide {
+        font-size: 18px;
+        position: static;
+        margin: 0 30px 0 0;
+        min-width: 390px;
+        & .school__container:first-child{
+            margin: 0 0 rem(30px) 0;
+            height: rem(157px);
+            
+        }
+        & .school__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        & .school__row_two{
+            display: flex;
+            align-items: flex-end;
+        }
+    
+      }
+}
+.index__swiper_one{
+    display: none;
+    @include tablet{
+        display: block;
+        margin: rem(60) 0 0 0;
+    }
+    & .index__btn_position_dir{
+        margin: rem(40px) 0 0 0;
+        justify-content: center;
+        @include tablet{
+            margin: rem(30px) 0 0 0;
+        }
+        & .btn.index__container{
+           padding: 0; 
+        }
+        & .btn.blue{
+            color: #008cff;
+            white-space: nowrap;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+    & .index__direction_header{
+        margin: 0 0 rem(24px) 0;
+    }
+}
+.dir__two_column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(30px);
+    & .course_dir_container{
+        margin: 0 0 0 0;
+    }
+    & a{
+        color: #000000;
+    }
+    @include mobile{
+        grid-template-columns: 1fr;
+
+    }
+}
+.school__directory_index_overflow{
+
+    // overflow: hidden;
+    margin: rem(-70px) 0 0 0;
+    
+    @include tablet{
+        display: none;
+    }
+}
+.school__dir_header_cont{
+    overflow: hidden;
+    margin: rem(120px) 0 0 0;
+    @include tablet{
+        margin: rem(60px) 0 0 0;
+    }
+    & .swiper{
+        overflow: visible;
+    }
+}
+    .swiper.mySwiper{
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+    
+      
+        
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+    
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+// }
+
+.index__swiper_directions{
+    display: none;
+    width: fit-content;
+    @include tablet{
+        display: block;
+        max-width: 100%;
+        width: 100%;
+    }
+    & .index__direction_header{
+        margin: rem(60px) 0 0 0;
+    }
+    & .course_dir_container{
+        max-width: rem(312px);
+        width: rem(312px);
+        display: inline-block;
+        // margin: 0 rem(40px) 0 0;
+        @include tablet{
+            max-width: 100%;
+            width: 100%;
+            margin: 0 0 rem(30px) 0;
+        }
+    }
+    
+}
+.index__direction_header{
+    margin: 0 0 rem(50px) 0;
+    position: relative;
+    z-index: 3;
+    & h2{
+        font-weight: 500;
+        font-size: rem(40px);
+        line-height: rem(50px);
+        
+    }
+    @include tablet{
+       
+        & h2{
+            font-weight: 500;
+            font-size: rem(24px);
+            line-height: rem(30px);
+        }
+    }
+}
+.btn.index__container{
+    padding: 0;
+}
+.index__container{
+    width: max-content;
+}
+.index__btn_position{
+    display: flex;
+    justify-content: flex-end;
+    margin: rem(60px) 0 0 0;
+    .btn.index__container{
+        padding: 0 0 0 0;
+    }
+    @include tablet{
+        justify-content: center;
+        margin: rem(30px) 0 0 0;
+    }
+}
+.index__numbers_contaier{
+    margin: rem(120px) 0 0 0;
+    @include tablet{
+        margin: rem(60px) 0 0 0;
+    }
+}
+.index__numbers_header{
+    margin: 0 0 rem(48px) 0;
+    & h2{
+        font-weight: 500;
+        font-size: rem(40px);
+        line-height: rem(48px);
+    }
+    @include tablet{
+        margin: 0 0 rem(24px) 0;
+        & h2{
+            font-weight: 500;
+            font-size: rem(24px);
+            line-height: rem(30px); 
+        }
+    }
+}
+.index__numbers_blocks{
+    margin: rem(48px) 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.index__numbers_student{
+    display: flex;
+    background: #307EBE;
+    max-width: rem(564px);
+    min-width: rem(518px);
+    width: 100%;
+    height: rem(391px);
+    border-radius: rem(20px);
+    position: relative;
+    @include tablet{
+        max-width: 100%;
+        min-width: 100%;
+        height: rem(120px);
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.index__numbers_culumn_col{
+    // margin: rem(60px) 0 0 rem(44px);
+    margin: 10.8% 0 0 7.9%;
+    @include tablet{
+        margin: rem(20px) 0 0 rem(30px);
+    }
+}
+.index__numbers_culumn_num{
+    & p{
+        font-weight: 700;
+        font-size: rem(64px);
+        line-height: rem(68px);
+        color: #FFFFFF;
+        @include tablet{
+            font-weight: 700;
+            font-size: rem(32px);
+            line-height: rem(34px);
+        }
+    }
+}
+.index__btn_position_dir.desktop{
+    @include tablet{
+        display: none;
+    }
+}
+.index__numbers_culumn_text{
+    margin: rem(12px) 0 0 0; 
+    max-width: rem(223px);
+    width: 100%;
+    & p{
+        font-weight: 400;
+        font-size: rem(20px);
+        line-height: rem(28px);
+        color: #FFFFFF;
+    }
+    @include tablet{
+        & p{
+            font-weight: 400;
+            font-size: rem(14px);
+            line-height: rem(20px);
+        }
+    }
+}
+.index__number_block_col{
+    margin: rem(39px) 0 0 rem(48px);
+    width: 200px;
+    @include tablet{
+        margin: rem(20px) 0 0 rem(30px);
+    }
+    
+}
+.index__number_block_img{
+    width: max-content;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 0 rem(5px);
+    & img{
+        width: 100%;
+        border-radius: rem(0) rem(20) rem(20) rem(0);
+    }
+    @include desktop_small{
+        max-width: rem(100px);
+    }
+}
+.index__numbers_culumn_img{
+    position: absolute;
+    right: 3px;
+    bottom: -6px;
+    width: 65%;
+    & img{
+        width: 100%;
+    }
+    @include tablet{
+        position: static;
+        width: rem(112px);
+        margin: 0 rem(13px) 0 0 ;
+        // height: rem(120px);
+    }
+}
+.index__number_block{
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    max-width: rem(610px);
+    width: 100%;
+    height: rem(180px);
+    margin: 0 0 rem(32px) 0;
+    border-radius: rem(20px);
+    & .index__numbers_culumn_text{
+        & p{
+            color: #010101;
+        }
+    }
+    @include tablet{
+        max-width: 100%;
+        min-width: 100%;
+        height: rem(120px);
+        display: flex;
+        margin: 0 0 rem(20px) 0;
+    }
+
+}
+.index__numbers_culumn_head{
+    
+    & p {
+        color: #008CFF;
+        font-weight: 700;
+        font-size: rem(42px);
+        line-height: rem(40px);
+        @include tablet{
+            font-weight: 700;
+            font-size: rem(32px);
+            line-height: rem(34px);
+        }
+    }
+}
+.index__numbers_blocks{
+    display: flex;
+    justify-content: space-between;
+}
+.index__numbers_two_block{
+    margin: 0 0 0 rem(20px);
+    max-width: rem(610px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @include tablet{
+        margin: rem(20px) 0 0 0;
+        max-width: 100%;
+    }
+}
+.index__trend_course_container{
+    margin: rem(120px) 0 0 0;
+    @include tablet{
+        margin: rem(60px) 0 0 0;
+    }
+}
+
+.index__top_school_container{
+    margin: rem(120px) 0 0 0;
+    @include tablet{
+        margin: rem(24px) 0 0 0;
+    }
+    & .index__btn_position{
+        margin: rem(30px) 0 0 0;
+        @include tablet{
+            margin: 0;
+        }
+    }
+}
+// .school__directory_index_overflow{
+//     overflow-x: scroll;
+//     &::-webkit-scrollbar{
+//         width: 0;
+//         height: 0;
+//     }
+// }
+.index__reviews_container{
+    margin: rem(120px) 0 0 0;
+    @include tablet{
+        margin: rem(60px) 0 0 0;
+    }
+}
+.index__reviews_column_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    & .page__school_reviews_container{
+        margin: 0 0 rem(40px) 0;
+        @include tablet{
+            margin: 0 0 rem(33px) 0;
+        }
+        &.last{
+            margin: 0 0 0 0;
+            
+        }
+        & .read-more-button{
+            display: none;
+            @include tablet{
+                display: flex;
+            }
+        }
+    }
+    @include tablet{
+        & .read-more-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & svg{
+                margin: rem(12px);
+            }
+          }
+          
+              & .page__school_review{
+                max-height: 91px;
+                overflow: hidden;
+                position: relative;
+                & .bottom{
+                    position: absolute;
+                    bottom: 0;
+                    background: linear-gradient(
+                    to bottom,
+                    rgb(255 217 29 / 0%),
+                    rgb(255, 255, 255) 95%);
+                    width: 100%;
+                    height: 110px;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+              }
+              & .active .page__school_review{
+                max-height: none;
+              }
+              & .active .bottom{
+                opacity: 0;
+                position: absolute;
+              }
+              & .active svg{
+                  transform: rotate(180deg);
+              }  
+    }
+    @include tablet{
+        gap:33px;
+    }
+    @include mobile{
+        grid-template-columns: 1fr;
+        gap: rem(0px);
+           & .index__reviews_column:first-child{
+               margin: 0 0 33px 0;
+           }
+        }
+    }
+
+.index__video_container{
+    margin: rem(120px) 0 0 0;
+    & .index__numbers_header{
+        margin: 0 0 0 0;
+    }
+    @include tablet{
+        margin: rem(60px) 0 0 0;
+        display: none;
+    }
+}
+.index__video_text{
+    max-width: rem(800px);
+    width: 100%;
+    margin: rem(16px) 0 rem(48px) 0;
+    & p{
+        font-weight: 400;
+        font-size: rem(22px);
+        line-height: rem(30px);
+    }
+    @include tablet{
+        margin: rem(16px) 0 rem(16px) 0;
+        & p{
+            font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(24ёpx);
+        }
+    }
+}
+.video_play{
+    display: none;
+    &.active{
+        display: block;
+        max-height: rem(400px);
+        height: 100%;
+        & iframe{
+            width: 100%;
+            height: 100%;
+            border-radius: rem(20px);
+            border: none;
+        }
+    }
+}
+.index__video{
+    height: rem(400px);
+    & iframe{
+        width: 100%;
+        height: 100%;
+        border-radius: rem(20px);
+    }
+    @include tablet{
+        // display: none;
+        margin: rem(20px) 0 0 0;
+        height: rem(274px);
+    }
+    @include mobile{
+        height: rem(174px);
+    }
+}
+.index__video_popup{
+    display: none;
+    @include tablet{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    outline: none;
+    background: rgba(#307ebe, 0.4);
+    }
+}
+.index__video_popup.active{
+    @include tablet{
+        display: block;
+        & .index__video{
+            width: 100%;
+            padding: 0 rem(10px) 0 rem(10px);
+            height: rem(300px);
+            position: absolute;
+            top: 50%;
+            margin: rem(-137px) 0 0 0;
+            @include mobile{
+                height: 200px;
+            }
+        }
+        & button{
+            border: none;
+            background: none;
+            width: max-content;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin: rem(-177px) 0 0 0;
+        }
+    }
+}
+.index__teacher_container{
+    margin:rem(120px) 0 rem(-120px) 0;
+    background: url('../images/fon.png') no-repeat;
+    // background-size: 100% 100%;
+    background-position: top;
+    height: rem(563px);
+    padding: rem(120px) 0 0 0;
+    @include tablet{
+        background: #307EBE;
+        margin:rem(60px) 0 rem(-15px) 0;
+        height: rem(328px);
+        padding: rem(60px) 0 0 0;
+    }
+    & .btn__white{
+        &:hover{
+            background: rgba(0, 0, 0, 0);
+            color: $white;
+            border: 1px solid $white;
+        }
+    }
+}
+.index__teacher_column{
+    & .btn.index{
+        margin: rem(48px) 0 0 0;
+        @include tablet{
+            margin: rem(36px) 0 0 0;
+        }
+
+    }
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.index__teacher_text{
+    & p{
+        font-weight: 500;
+        font-size: rem(28px);
+        line-height: rem(36px);
+        color: #FFFFFF;
+       
+    }
+    @include tablet{
+        max-width: 500px;
+        width: 100%;
+        min-width: 330px;
+        margin: 0 0 rem(8px) ;
+        & p{
+            font-weight: 500;
+            font-size: rem(18px);
+            line-height: rem(24px);
+            text-align: center;
+        }
+        
+    }
+}
+.index__teacher_course{
+    width: rem(568px);
+    & p{
+        font-weight: 700;
+        font-size: rem(48px);
+        line-height: rem(62px);
+        color: #FFFFFF;
+        
+    }
+    @include tablet{
+        max-width: 500px;
+        width: 100%;
+        min-width: 330px;
+        & p {
+            font-weight: 500;
+            font-size: rem(26px);
+            line-height: rem(32px);
+            text-align: center;
+        }
+    }
+}
+.form__header_index{
+    & h3{
+        font-weight: 500;
+        font-size: rem(32px);
+        line-height: rem(40px);
+    }
+}
+.index__video_prev{
+    background: linear-gradient(0deg, rgba(2, 88, 159, 0.6), rgba(2, 88, 159, 0.6)), url(219567.png);
+    padding: 0 0 0 0;
+    width: calc(100% - 10px);
+    // height: 30.5vw;
+    height: calc(100% - 2px);
+    border-radius: rem(20px);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    & img{
+        position: absolute;
+        top: 0;
+        // right: 1100px;
+    }
+    & svg{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+    @include mobile{
+        // height: 45vw;
+        & svg{
+            margin: -25px 0 0 -25px;
+            
+        }
+    }
+}
+.index__video_prev.none{
+    display: none;
+}
+.index__video_prev_mobile{
+   position: relative;
+   overflow: hidden;
+   height: 300px;
+   border-radius: 20px;
+   background: linear-gradient(0deg, rgba(2, 88, 159, 0.6), rgba(2, 88, 159, 0.6));
+    & img{
+        position: absolute;
+        border-radius: 20px;
+    }
+    & svg{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin: -25px 0 0 -25px;    
+    }
+    @include mobile{
+    height: 200px;
+    }
+}
+.video__mobile{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+}

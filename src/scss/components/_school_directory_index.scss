@@ -1,0 +1,25 @@
+.school__directory_index_container{
+    width: max-content;
+    & .school__row{
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+        & .school__container{
+            margin: 0 rem(30px) 0 0;
+        }
+    }
+    @include tablet{
+        display: flex;
+    }
+}
+.scool__dir_index{
+    display: none;
+    @include tablet{
+        display: block;
+        overflow-x: scroll;
+            &::-webkit-scrollbar{
+                width: 0;
+                height: 0;
+            }
+    }
+}

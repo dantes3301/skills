@@ -1,0 +1,78 @@
+
+@import "vars";
+@import "base/fonts";
+@import "base/breakpoints";
+@import "base/basic";
+@import "base/mixins";
+@import "base/table";
+@import "base/modals";
+@import "base/select";
+
+@import "components/_footer.scss";
+@import "components/_header.scss";
+@import "components/_header_expert.scss";
+@import "components/_school_directory";
+@import "components/_page_selection_menu";
+@import "components/custom_checkbox";
+@import "components/course_card";
+@import "components/directions";
+@import "components/sorting";
+@import "components/sorting_mobil";
+@import "components/_cousre_card_line";
+@import "components/page_course_menu";
+@import "components/page_course_info";
+@import "components/page_course_direction";
+@import "components/_page_school_sorting_mobil";
+@import "components/_filter";
+@import "components/_personal_area_course_card";
+@import "components/_page_personal_aside";
+@import "components/_page_personal_docs";
+@import "components/_header_auth";
+@import "components/_course_card_three";
+@import "components/_school_directory_index";
+@import "components/_slider.scss";
+@import "components/upload-photo/_drag_avatar.scss";
+@import "components/_slider_two.scss";
+
+@import 'helpers/_swiper.min.scss';
+
+@import "blocks/authorization";
+@import "blocks/registration";
+@import "blocks/password_recovery";
+@import "blocks/registration_step_one";
+@import "blocks/registration_step_two";
+@import "blocks/index";
+@import "blocks/project";
+@import "blocks/privacy_policy";
+@import "blocks/help";
+@import "blocks/course_directions";
+@import "blocks/school";
+@import "blocks/page_school";
+@import "blocks/page_course";
+@import "blocks/_page_school_reviews";
+@import "blocks/_page_course_program";
+@import "blocks/_catalog_course";
+@import "blocks/_ui";
+@import "blocks/four_hundred_four";
+@import "blocks/expert";
+@import "blocks/index_popup";
+
+@import "blocks/_personal_area_dashboard";
+@import "blocks/_personal_area_profile";
+@import "blocks/_personal_area_courses";
+@import "blocks/_personal_area_docs";
+@import "blocks/_personal_area_history";
+@import "blocks/_personal_area_modals";
+
+
+
+
+// @import "helpers/swiper.min";
+
+// @import "components/header";
+
+// @import "blocks/index-banner";
+
+// @import "modal/modal";
+
+

@@ -1,0 +1,103 @@
+@@include('components/_header_auth.html', {title: 'Личный кабинет'})
+<div class="breadcrumbs__container">
+  <div class="container">
+    <nav>
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item">
+          <a href="#" class="grey__link">Главная</a>
+        </li>
+        <li class="breadcrumb-item"><p>Личный кабинет</p></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="body page__personal-history">
+  <div class="container">
+    <div class="personal-history__container">
+      @@include('components/_page_personal_aside.html')
+      <div class="personal-history__content">
+        <div class="content__history-types">
+          <div class="info__header">
+            <span>История покупок</span>
+          </div>
+          <div class="info__content">
+            <a id="history-tab-btn-0" href="#" class="history-tab-type history-tab-type_active">
+              Незавершенные покупки
+            </a>
+            <a id="history-tab-btn-1" href="#" class="history-tab-type">Завершенные покупки</a>
+          </div>
+        </div>
+        <div id="history-tab-0" class="content__history-table content__history-table_active">
+          <div class="custom-table__container">
+            <div class="custom-table__header">
+              <div class="table-header__cell">№ Заказа</div>
+              <div class="table-header__cell">Товар</div>
+              <div class="table-header__cell">Сумма</div>
+              <div class="table-header__cell">Статус</div>
+            </div>
+            <div class="custom-table__body">
+              <div class="table-body__item">
+                <div class="table-body__cell">000021</div>
+                <div class="table-body__cell">
+                  Телеграм Бот "Курс Валют" на Node.js и Monobank API
+                </div>
+                <div class="table-body__cell">000 000 000 руб.</div>
+                <div class="table-body__cell">Не оплачен</div>
+                <div class="table-body__cell">
+                  <a href="#" class="btn btn-outline-blue">Оплатить</a>
+                </div>
+              </div>
+              <div class="table-body__item">
+                <div class="table-body__cell">000021</div>
+                <div class="table-body__cell">
+                  Телеграм Бот "Курс Валют" на Node.js и Monobank API
+                </div>
+                <div class="table-body__cell">000 000 000 руб.</div>
+                <div class="table-body__cell">Не оплачен</div>
+                <div class="table-body__cell">
+                  <a href="#" class="btn btn-outline-blue">Оплатить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="history-tab-1" class="content__history-table">
+          <div class="custom-table__container">
+            <div class="custom-table__header">
+              <div class="table-header__cell">№ Заказа</div>
+              <div class="table-header__cell">Товар</div>
+              <div class="table-header__cell">Сумма</div>
+              <div class="table-header__cell">Статус</div>
+            </div>
+            <div class="custom-table__body">
+              <div class="table-body__item">
+                <div class="table-body__cell">000021</div>
+                <div class="table-body__cell">
+                  Телеграм Бот "Курс Валют" на Node.js и Monobank API
+                </div>
+                <div class="table-body__cell">000 000 000 руб.</div>
+                <div class="table-body__cell">Оплачен</div>
+                <div class="table-body__cell">
+                  <a href="#" class="btn btn-outline-blue">Скачать чек</a>
+                </div>
+              </div>
+              <div class="table-body__item">
+                <div class="table-body__cell">000021</div>
+                <div class="table-body__cell">
+                  Телеграм Бот "Курс Валют" на Node.js и Monobank API
+                </div>
+                <div class="table-body__cell">000 000 000 руб.</div>
+                <div class="table-body__cell">Оплачен</div>
+                <div class="table-body__cell">
+                  <a href="#" class="btn btn-outline-blue">Скачать чек</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/personal_area/history/tabs.js"></script>
+@@include('components/_footer.html')

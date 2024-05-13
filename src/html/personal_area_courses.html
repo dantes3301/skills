@@ -1,0 +1,79 @@
+@@include('components/_header_auth.html', {title: 'Личный кабинет'})
+<div class="breadcrumbs__container">
+  <div class="container">
+    <nav>
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item">
+          <a href="#" class="grey__link">Главная</a>
+        </li>
+        <li class="breadcrumb-item"><p>Личный кабинет</p></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="body page__personal-courses">
+  <div class="container">
+    <div class="personal-courses__container">
+      @@include('components/_page_personal_aside.html')
+      <div class="personal-courses__content">
+        <div class="content__courses-types">
+          <div class="info__header">
+            <span>Мои курсы</span>
+          </div>
+          <div class="info__content">
+            <a
+              href="#"
+              id="course-tab-btn-0"
+              class="course-tab-type course-tab-type_active"
+              >Активные</a
+            >
+            <a href="#" id="course-tab-btn-1" class="course-tab-type">
+              Все курсы
+            </a>
+            <a href="#" id="course-tab-btn-2" class="course-tab-type"
+              >Избранные</a
+            >
+          </div>
+        </div>
+        <div class="content__courses-list">
+          <div class="courses-list__tab-content">
+            <div
+              id="course-tab-0"
+              class="courses-list__body courses-list__body_tab-active"
+            >
+              @@include('components/_personal_area_course_card_selects.html')
+              @@include('components/_personal_area_course_card.html')
+            </div>
+            <div id="course-tab-1" class="courses-list__body">
+              @@include('components/_personal_area_course_card__all_selects.html')
+              @@include('components/_personal_area_course_card__all.html')
+            </div>
+            <div id="course-tab-2" class="courses-list__body">
+              <!-- if !courses.length -->
+              <span class="courses-list__empty"
+                >В данном разделе нет курсов</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="content__courses-more">
+          <a id="show-more-courses" href="#" class="btn btn-outline-blue"
+            >Показать больше курсов</a
+          >
+          <!-- if !courses.length -->
+          <a id="catalog-courses" href="#" class="btn btn-outline-blue list-courses-btn"
+            >Каталог курсов</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/personal_area/courses/tabs.js"></script>
+<script src="js/heart.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/personal_area/coursesFilterSelect/coursesFilterDirection.js"></script>
+<script src="js/personal_area/coursesFilterSelect/coursesFilterAuthor.js"></script>
+<script src="js/personal_area/coursesFilterSelect/coursesFilterSort.js"></script>
+@@include('components/modals/_custom_modal_certificate.html')
+@@include('components/_footer.html')

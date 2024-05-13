@@ -1,0 +1,85 @@
+@@include('components/_header.html', {title: 'Страница курса'})
+<div class="breadcrumbs__container">
+    <div class="container">
+        <nav>
+            <ul class="breadcrumbs">
+                <li class="breadcrumb-item"><a href="#" class="grey__link">Главная</a></li>
+                <li class="breadcrumb-item"><p>Каталог курсов</p></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="body catalog__course">
+    <div class="container">
+        <div class="body_catalog__course_container">
+            <div class="catalog__course_info">
+                <a href="" target="_blank">
+                    <div class="catalog__course_background">
+                        
+                    </div>
+                </a>
+                <div class="catalog__course_information">
+                    <div class="course_dir_header">
+                        <h1>Каталог курсов</h1>
+                    </div>
+                    <div class="course_dir_text">
+                        <p>Мы собрали лучшие курсы по множеству направлений. Определяйся с категорией или воспользуйся фильтром.</p>
+                    </div>
+                    
+                </div>
+                <div class="catalog__course_card_menu_filter">
+                    
+                    <div class="page__course_filter_container">
+                        @@include('components/_filter.html')
+                        <a href="" target="_blank">
+                            <div class="banner__container">
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="school__cards_container_menu" id="course__scroll">
+                        @@include("components/_page_school_sorting_mobil.html")
+                        <div class="sorting__menu_container">
+                            @@include("components/_sorting.html")
+                            
+                            <div class="net__line">
+                                <div class="net__line_svg one">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="9" height="9" fill="#008CFF"/>
+                                            <rect x="0.5" y="0.5" width="9" height="9" stroke="#008CFF"/>
+                                            <rect x="0.5" y="14.5" width="9" height="9" fill="#008CFF"/>
+                                            <rect x="0.5" y="14.5" width="9" height="9" stroke="#008CFF"/>
+                                            <rect x="14.5" y="0.5" width="9" height="9" fill="#008CFF"/>
+                                            <rect x="14.5" y="0.5" width="9" height="9" stroke="#008CFF"/>
+                                            <rect x="14.5" y="14.5" width="9" height="9" fill="#008CFF"/>
+                                            <rect x="14.5" y="14.5" width="9" height="9" stroke="#008CFF"/>
+                                        </svg>     
+                                </div>
+                                <div class="net__line_svg two">
+                                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="4" fill="#CFCFCF"/>
+                                            <rect width="24" height="4" transform="translate(0 8)" fill="#CFCFCF"/>
+                                            <rect width="24" height="4" transform="translate(0 16)" fill="#CFCFCF"/>
+                                        </svg>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="school__cards_body">
+                            <div class="school__cards_body_text">
+                                <p>По Вашему запросу ничего не найдено</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/personal_area/citySelect/citySelect.js"></script>
+<script src="js/page_school.js"></script>
+<script src="js/personal_area/citySelect/citySelect.js"></script>
+<script src="js/direction.js"></script>
+@@include('components/_footer.html')

@@ -1,0 +1,1 @@
+"use strict";var link='<a class="blue__link" href="#">Отправить письмо повторно</a>',secs=30,timer=setInterval(tick,1e3);function tick(){0==secs?document.querySelector(".timer__text").innerHTML=link:document.querySelector(".timer").innerHTML=--secs}

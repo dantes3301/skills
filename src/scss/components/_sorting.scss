@@ -1,0 +1,37 @@
+.sorting{
+    display: flex;
+    & div{
+        margin: 0 0 0 rem(35px);
+        display: flex;
+        align-items: center;
+    }
+    & p{
+        color: #808080;
+        font-size: rem(15px);
+    }
+    & a{
+        font-size: rem(15px);
+    }
+    & svg{
+        margin: 0 0 0 rem(8px);
+    }
+}
+.costs__link{
+    color: #808080;
+    text-decoration-line: none;
+    &:hover{
+        color: $blue;
+    }
+}
+.costs__link.border{
+    color: $blue;
+    text-decoration-line: none;
+    border-bottom: 1px dashed $blue;
+    &:hover{
+        color: $blue;
+    }
+}
+.costs__link_two{
+    color: #808080;
+    text-decoration-line: none;
+}

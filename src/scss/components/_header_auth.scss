@@ -1,0 +1,179 @@
+.header-auth__container {
+  padding: 0 0 25px 0;
+  background-color: #f0f9fd;
+}
+
+.header-auth__container {
+  & button {
+    background-color: #ffffff;
+  }
+}
+
+.logo__svg {
+  min-width: 140px;
+  width: 100%;
+  max-width: 240px;
+  height: max-content;
+  & svg {
+    width: 100%;
+  }
+
+  @include tablet {
+    max-width: 140px;
+    width: 100%;
+  }
+}
+
+.header__row {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+  height: rem(100px);
+  display: flex;
+  align-items: center;
+  @include tablet {
+    height: rem(76px);
+  }
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  // padding: rem(20px) 0;
+}
+
+.header__content_left {
+  display: flex;
+  width: max-content;
+  align-items: center;
+}
+
+.header__content_right {
+  .user__dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    .user-avatar__container {
+      max-width: 48px;
+      max-height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      margin-right: rem(16px);
+      img {
+        @include imgContain;
+      }
+    }
+    .user-dropdown__toggle-icon {
+      transition: 0.3s;
+      &.active {
+        transform: rotate(180deg);
+      }
+    }
+    .dropdown__user-menu {
+      display: none;
+      min-width: 272px;
+      top: 56px;
+      right: 0;
+      position: absolute;
+      background: $white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: rem(20px);
+      z-index: 1000;
+      .btn-redirect__container {
+        display: none;
+        @include tablet {
+          padding: 0 15px;
+          display: block;
+          margin-bottom: 32px;
+        }
+      }
+      a {
+        padding: rem(12px) rem(15px);
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        svg {
+          transition: 0.3s;
+        }
+        &.user-menu__active {
+          span {
+            color: #307ebe;
+          }
+          svg {
+            path {
+              fill: #307ebe;
+            }
+          }
+        }
+        &:hover {
+          span {
+            color: #307ebe;
+          }
+          svg {
+            path {
+              fill: #307ebe;
+            }
+          }
+        }
+        &.btn {
+          display: none;
+        }
+        @include tablet {
+          &.btn {
+            margin-top: 16px;
+            width: 100%;
+            text-align: center;
+            display: block;
+          }
+        }
+        svg {
+          max-width: 16px;
+          max-height: 16px;
+          min-width: 16px;
+          min-height: 16px;
+        }
+        span {
+          margin-left: 10px;
+          font-size: 16px;
+          color: #666666;
+        }
+      }
+      &_active {
+        display: block;
+        top: 56px;
+        @include mobile {
+          border-radius: 0;
+          display: flex;
+          flex-direction: column;
+          top: 76px;
+        }
+      }
+      @include mobile {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+      }
+    }
+  }
+}
+.header__btn {
+  margin-left: 50px;
+
+  @include tablet {
+    display: none;
+  }
+
+  & a {
+    width: max-content;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}

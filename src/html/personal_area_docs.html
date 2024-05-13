@@ -1,0 +1,57 @@
+@@include('components/_header_auth.html', {title: 'Личный кабинет'})
+<div class="breadcrumbs__container">
+  <div class="container">
+    <nav>
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item">
+          <a href="#" class="grey__link">Главная</a>
+        </li>
+        <li class="breadcrumb-item"><p>Личный кабинет</p></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="body page__personal-docs">
+  <div class="container">
+    <div class="personal-docs__container">
+      @@include('components/_page_personal_aside.html')
+      <div class="personal-docs__content">
+        <div class="content__docs-info">
+          <div class="info__header">
+            <span>Документы</span>
+            <a class="header__download-link">
+              <span>Скачать все одним файлом</span>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.25 6.75H11.25V2.25H6.75V6.75H3.75L9 12.75L14.25 6.75ZM3 14.25H15V15.75H3V14.25Z"
+                  fill="#008CFF"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="info__content">
+            <div class="content__docs-item">
+              @@include('components/_page_personal_docs.html')
+            </div>
+            <div class="content__docs-item">
+              @@include('components/_page_personal_docs.html')
+            </div>
+            <div class="content__docs-item">
+              @@include('components/_page_personal_docs.html')
+            </div>
+            <div class="content__docs-item">
+              @@include('components/_page_personal_docs.html')
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('components/_footer.html')

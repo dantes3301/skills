@@ -1,0 +1,64 @@
+.body.catalog__course{
+    margin: rem(48px) 0 0 0;
+    @include tablet{
+        margin: 0 0 rem(50px) 0;
+    }
+}
+.body_catalog__course_container{
+    & .school__cards_body{
+        margin-left: rem(56px);
+        @include desktop_base{
+            margin-left: 30px;
+        }
+        @include tablet{
+            margin-left: 0px;
+        }
+    }
+}
+
+.catalog__course_background{
+    background: url("../images/catalog__course.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: rem(302px);
+    min-height: rem(302px);
+    height: 100%;
+    border-radius: rem(20px);
+    padding: 0;
+    @include tablet{
+        width: 100%;
+        max-height: rem(302px);
+        min-height: rem(302px);
+        height: 100%;
+    }
+    @include mobile{
+        border-radius: rem(10px);
+        min-height: rem(292px);
+        background: url("../images/page_course_mobile.jpg"), no-repeat;
+        margin: rem(20px) 0 0 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }    
+}
+.catalog__course_information{
+    margin: rem(100px) 0 0 0;
+}
+.catalog__course_card_menu_filter{
+    display: flex;
+    margin: rem(84px) 0 0 0;
+    & .page__school_filter{
+        margin: rem(-10px) 0 0 0;
+    }
+    @include tablet{
+        margin: rem(30px) 0 0 0;
+    }
+}
+.catalog__course_menu_margin{
+    margin: 0 0 0 rem(55px);
+    @include tablet{
+        margin: rem(21px) auto 0 auto;
+    }
+}

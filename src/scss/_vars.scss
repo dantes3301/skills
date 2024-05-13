@@ -1,0 +1,32 @@
+// Colors
+$black: #000000;
+$dark: #333333;
+$grey : #6E767C;
+$greyOne : #777777;
+$blue: #008CFF;
+$blueBase: #307EBE;
+$lineColor: #6DACDF;
+$white: rgba(255, 255, 255, 1);
+$red: #FF0000;
+// Function
+
+$base-font-size: 16;
+
+// strips away any unit from a value: e.g. "16px" => 16
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function rem($size, $base: $base-font-size) {
+  $pxUnitless: strip-unit($size);
+  @return #{$pxUnitless / $base}rem;
+}
+
+
+// Fonts
+$Inter: Inter, sans-serif; // Default
+$VelaSans: VelaSans, sans-serif; // Headlines
+$TTNorms: TT Norms, sans-serif; 

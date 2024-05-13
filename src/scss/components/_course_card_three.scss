@@ -1,0 +1,157 @@
+.school__cards_body{
+  .course__card_three_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    @include desktop_base{
+      gap: 30px;
+    }
+    @include tablet{
+      gap: 20px;
+    }
+    @include mobile{
+      grid-template-columns: 1fr;
+    }
+    &.is-active{
+      display: none;
+      @include tablet{
+        display: grid;
+      }
+    }
+  }
+}
+.course__card_three_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    @include tablet{
+      grid-template-columns: 1fr 1fr;
+      gap:20px
+    }
+    @include mobile{
+      grid-template-columns: 1fr;
+    }
+}
+.course_card_three {
+    // padding: rem(24px) rem(28px);
+    border-radius: rem(20px);
+    box-shadow: 5px 15px 35px rgba(0, 0, 0, 0.08);
+    padding: 0;
+      background: none;
+    overflow: hidden;
+    @include tablet {
+      padding: 0;
+      background: none;
+    }
+    .course__card {
+    //   max-width: unset;
+      max-height: unset;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      position: relative;
+      border-radius: 0;
+        margin-bottom: 0;
+        width: 100%;
+        min-width: 100%;
+      @include tablet {
+        grid-template-columns: 1fr;
+        gap: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        max-height: unset;
+        width: 100%;
+        min-width: 100%;
+      }
+      .course__card_header {
+        align-items: flex-start;
+        .school__estimates {
+          align-items: flex-start;
+        }
+        .course__time {
+          margin-left: rem(16px);
+          display: none;
+          align-items: center;
+          border-radius: rem(40px);
+          padding: rem(4px) rem(12px);
+          @include mobile {
+            margin-left: rem(8px);
+          }
+          p {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 100%;
+          }
+          &.course__time-new {
+            border: 1px solid $blue;
+            p {
+              color: $blue;
+            }
+          }
+          &.course__time-process {
+            background: rgba(0, 140, 255, 0.1);
+            border: 0;
+            p {
+              color: $blue;
+            }
+          }
+        }
+      }
+      .course__card_img {
+        min-height: 248px;
+          border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        max-width: unset;
+        @include tablet {
+          min-height: 248px;
+          border-radius: 20px 20px 0 0;
+        }
+        img {
+          @include imgContain;
+          border-radius: 0;
+        }
+        .heart__svg {
+          z-index: 10;
+        }
+      }
+    }
+    .course__card_info {
+      position: relative;
+      z-index: 10;
+      padding: rem(12px) rem(24px) rem(24px) rem(24px);
+        border-radius: rem(20px) rem(20px) 0 0;
+        
+      .card_info__top-border {
+        z-index: -1;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -12px;
+        left: 0;
+        background: $white;
+        border-radius: rem(20px) rem(20px) 0 0;
+      }
+      max-width: unset;
+      max-height: unset;
+      width: unset;
+      height: unset;
+    //   padding: 0;
+      border-radius: 0px;
+      margin: 0;
+      box-shadow: none;
+      .course__card_mid {
+        margin-top: rem(40px);
+      }
+      .course__card_footer {
+        margin-top: rem(40px);
+      }
+      @include tablet {
+        padding: rem(12px) rem(24px) rem(24px) rem(24px);
+        border-radius: rem(20px) rem(20px) 0 0;
+        // .card_info__top-border {
+        //   display: block;
+        // }
+      }
+    }
+  }

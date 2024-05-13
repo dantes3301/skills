@@ -1,0 +1,72 @@
+// .limiter {
+//     max-height: 100px;
+//     overflow: hidden;
+//     position: relative;
+//   }
+//   .limiter .bottom {
+//     position: absolute;
+//     bottom: 0;
+//     background: linear-gradient(
+//       to bottom,
+//       rgb(255 217 29 / 0%),
+//       rgb(255 217 29)90%);
+//     width: 100%;
+//     height: 60px;
+//     opacity: 1;
+//     transition: 0.3s;
+//   }
+//   .read-more-checker {
+//     opacity: 0;
+//     position: absolute;
+//   }
+//   .read-more-checker:checked ~ .limiter {
+//     max-height: none;
+//   }
+//   .read-more-checker:checked ~ .limiter .bottom {
+//     opacity: 0;
+//     transition: 0.3s;
+//   }
+  .read-more-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & {
+        content: "SDsfs отзыв";
+    }
+    & svg{
+        margin: rem(12px);
+    }
+  }
+  .ui_r{
+      & .page__school_review{
+        max-height: 91px;
+        overflow: hidden;
+        position: relative;
+        & .bottom{
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(
+            to bottom,
+            rgb(255 217 29 / 0%),
+            rgb(255, 255, 255) 95%);
+            width: 100%;
+            height: 110px;
+            opacity: 1;
+            transition: 0.3s;
+        }
+      }
+      & .active .page__school_review{
+        max-height: none;
+      }
+      & .active .bottom{
+        opacity: 0;
+        position: absolute;
+      }
+      & .active svg{
+          transform: rotate(180deg);
+      }
+
+       
+  }
+  

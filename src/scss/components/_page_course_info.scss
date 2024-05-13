@@ -1,0 +1,35 @@
+.page__course_info{
+    max-width: rem(855px);
+    width: 100%;
+}
+
+.page__course_text{
+    & p{
+        font-size: rem(20px);
+        line-height: rem(28px);
+    }
+    @include tablet{
+        & p{
+            font-size: rem(16px);
+            line-height: rem(24px);
+        }
+    }
+}
+.page__course_information{
+    display: flex;
+    justify-content: space-between;
+    margin: rem(28px) 0 0 0;
+    @include tablet{
+        margin: 0 0 0 0;
+        flex-direction: column;
+    }
+}
+.page__course_information_block{
+    margin: rem(18px) 0 0 0;
+}
+.page__course_information_block_header{
+    color: #777777;
+}
+.page__course_information_block_text{
+    margin: rem(8px) 0 0 0;
+}

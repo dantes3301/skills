@@ -1,0 +1,29 @@
+.header__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__step {
+    color: #757575;
+    font-size: 18px;
+}
+
+.header__text {
+    margin-bottom: 28px;
+}
+
+.personal__data {
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.registration__text_link {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+        margin-top: 24px;
+    }
+}

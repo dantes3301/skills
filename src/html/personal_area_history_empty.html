@@ -1,0 +1,36 @@
+@@include('components/_header_auth.html', {title: 'Личный кабинет'})
+<div class="breadcrumbs__container">
+  <div class="container">
+    <nav>
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item">
+          <a href="#" class="grey__link">Главная</a>
+        </li>
+        <li class="breadcrumb-item"><p>Личный кабинет</p></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="body page__personal-history">
+  <div class="container">
+    <div class="personal-history__container">
+      @@include('components/_page_personal_aside.html')
+      <div class="personal-history__content">
+        <div class="content__history-types">
+          <div class="info__header">
+            <span>История покупок</span>
+          </div>
+          <div class="info__content">
+            <a id="history-tab-btn-0" href="#" class="history-tab-type history-tab-type_active">
+              Незавершенные покупки
+            </a>
+            <a id="history-tab-btn-1" href="#" class="history-tab-type">Завершенные покупки</a>
+          </div>
+        </div>
+        <div class="history-list__empty">В данном разделе нет покупок</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/personal_area/history/tabs.js"></script>
+@@include('components/_footer.html')

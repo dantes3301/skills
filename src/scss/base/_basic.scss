@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: $TTNorms;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: rem(22px);
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+  color: #307ebe;
+  transition: color 0.2s;
+}
+
+.blue__link {
+  text-decoration: none;
+  color: #307ebe;
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+.black__link {
+  color: #060606;
+  text-decoration: none;
+  &:hover {
+    color: #307ebe;
+  }
+}
+.grey__link {
+  color: #6e767c;
+  text-decoration: none;
+  &:hover {
+    color: #307ebe;
+  }
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+  padding: 0 0 rem(120px) 0;
+  background-color: #f0f9fd;
+  @include tablet {
+    padding: 0 0 rem(15px) 0;
+  }
+  & button {
+    background-color: #f0f9fd;
+  }
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 rem(20px) 0 rem(20px);
+  @include tablet {
+    padding: 0 rem(15px) 0 rem(15);
+  }
+}
+.body {
+  margin: rem(96px) 0 0 0;
+  @include tablet {
+    margin: rem(40px) 0 rem(60px) 0;
+  }
+}
+.blue {
+  display: flex;
+  color: $blue;
+  align-items: center;
+  justify-content: center;
+  height: rem(52px);
+  border-radius: rem(40px);
+  border: 1px solid $blue;
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+button {
+  cursor: pointer;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+button.btn {
+  font-family: $TTNorms;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  transition: 0.5s;
+  border-radius: 40px;
+  padding: rem(15.5px) rem(34.5px);
+  font-size: 16px;
+  cursor: pointer;
+  &.btn-gradient {
+    color: #ffffff;
+    font-size: rem(15px);
+    line-height: rem(12px);
+    font-weight: 500;
+    background: linear-gradient(97.99deg, #31a2ff 6.67%, #b167bb 50.69%, #ff3131 92.39%), #008cff;
+    background-position: 0 0;
+    background-size: 100%;
+    padding: rem(11px) rem(18px);
+    border-radius: rem(40px);
+    transition: 0.5s;
+    &:hover {
+      background-size: 200%;
+    }
+  }
+  &.btn-blue {
+    color: $white;
+    background: $blue;
+    font-weight: 500;
+    &:hover {
+      background: #ff0000;
+    }
+  }
+  &.btn-white {
+    background: $white;
+    color: $blue;
+    border: 1px solid transparent;
+    font-weight: 500;
+    &:hover {
+      border: 1px solid $white;
+      color: $white;
+      background: transparent;
+    }
+  }
+  &.btn-outline-blue {
+    color: $blue;
+    font-weight: 500;
+    border-radius: rem(40px);
+    border: 1px solid $blue;
+    background-color: transparent;
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+  &.btn-outline-dark {
+    color: $dark;
+    font-weight: 500;
+    border: 1px solid $dark;
+    background: transparent;
+    &:hover {
+      background-color: $dark;
+      color: $white;
+    }
+  }
+  &.btn-certificate {
+    max-width: 34px;
+    max-height: 34px;
+    min-width: 34px;
+    min-height: 34px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: rem(4px);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.btn__white {
+  display: flex;
+  width: max-content;
+  color: #008cff;
+  justify-content: center;
+  align-items: center;
+  padding: 0 rem(35px);
+  height: 3.25rem;
+  border-radius: 2.5rem;
+  border: 1px solid #008cff;
+  background-color: $white;
+  transition: 0.5s;
+}
+.btn.index {
+  padding: 0;
+  margin: rem(90px) 0 0 0;
+}
+.inp {
+  width: 100%;
+  height: 52px;
+  border-radius: 30px;
+  border: 1px solid #d1d1d1;
+  padding: 25px;
+  transition: 0.5s;
+  &:hover {
+    border: 1px solid #989898;
+  }
+  &:focus {
+    border: 1px solid #addaff;
+  }
+  &.is-active {
+    border: 1px solid #ffa8a8;
+  }
+  &.active {
+    border: 1px solid #9acc99;
+  }
+}
+
+input, textarea, .custom-select__btn {
+  &.validate-error {
+    border: 1px solid #ffa8a8!important;
+  }
+  &.validate-success {
+    border: 1px solid #9acc99!important;
+  }
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+  border-radius: 30px;
+  border: 1px solid #d1d1d1;
+  padding: 25px;
+  transition: 0.5s;
+  font-family: TT Norms, sans-serif;
+  &:hover {
+    border: 1px solid #989898;
+  }
+  &:focus {
+    border: 1px solid #addaff;
+  }
+}
+.overflow-hidden {
+  overflow: hidden;
+}

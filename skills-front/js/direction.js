@@ -1,0 +1,1 @@
+"use strict";document.querySelectorAll(".directions__svg").forEach(function(e){e.addEventListener("click",function(){e.parentElement.remove()})});

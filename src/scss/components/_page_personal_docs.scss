@@ -1,0 +1,75 @@
+.page-personal__docs {
+  .content__header {
+    font-weight: 700;
+    line-height: 125%;
+  }
+  .content__users {
+    margin-top: rem(16px);
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+    }
+    .users__item {
+      display: flex;
+      .img__container {
+        max-width: rem(24px);
+        max-height: rem(24px);
+        min-width: rem(24px);
+        min-height: rem(24px);
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          @include imgContain;
+        }
+      }
+      span {
+        font-size: 14px;
+        margin-left: 8px;
+      }
+      margin-left: 24px;
+      &:first-child {
+        margin-left: 0;
+        @include mobile {
+          margin-bottom: 11px;
+        }
+      }
+      @include mobile {
+        margin-left: 0;
+      }
+    }
+  }
+  .content__link-actions {
+    margin-top: 19px;
+    display: flex;
+    a {
+      display: flex;
+      align-items: center;
+      margin-right: 19px;
+      span {
+        transition: 0.15s;
+        font-size: rem(14px);
+        line-height: 129%;
+        color: $blue;
+        border-bottom: 1px solid transparent;
+      }
+      &:hover {
+        span {
+          border-bottom: 1px solid $blue;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      svg {
+        margin-right: rem(9px);
+      }
+    }
+  }
+  .certificate__date-got {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 129%;
+    color: $greyOne;
+  }
+}

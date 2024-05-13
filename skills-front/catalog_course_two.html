@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница курса</title>
+    <link type="text/css" rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header__container">
+                <div class="header__row">
+                    <div class="container">
+                        <div class="header__content">
+                            <div class="header__content_left">
+                                <div class="header__logo">
+                                    <div class="logo__svg">
+                                        <a href="#">
+                                            <svg width="242" height="40" viewBox="0 0 242 40" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.4732 20.7941C20.9892 20.7941 27.1386 26.8907 27.1386 34.3429V39.7708H-0.191895V34.3429C-0.191895 26.891 5.95737 20.7941 13.4732 20.7941V20.7941ZM17.8931 9.55373L11.2747 13.3423V5.76517L17.8931 9.55383V9.55373ZM13.4732 0.150391C18.7113 0.150391 22.9573 4.36038 22.9573 9.55373C22.9573 14.7471 18.7112 18.9569 13.4732 18.9569C8.23538 18.9569 3.98937 14.747 3.98937 9.55373C3.98937 4.36027 8.23549 0.150391 13.4732 0.150391Z"
+                                                    fill="#008CFF" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M43.5801 20.7948C51.0961 20.7948 57.2456 26.8914 57.2456 34.3436V39.7715H29.915V34.3436C29.915 26.8918 36.0643 20.7948 43.5801 20.7948V20.7948ZM48.3703 11.2141C47.6785 13.1761 45.796 14.5842 43.5808 14.5842C41.3653 14.5842 39.4827 13.1762 38.7909 11.2141H48.3702H48.3703ZM43.5808 0.151367C48.8189 0.151367 53.0647 4.36083 53.0647 9.55439C53.0647 14.7477 48.8188 18.9575 43.5808 18.9575C38.3429 18.9575 34.0965 14.7476 34.0965 9.55439C34.0965 4.36073 38.343 0.151367 43.5808 0.151367V0.151367Z"
+                                                    fill="#FF0000" />
+                                                <path
+                                                    d="M74.6724 18.784C76.0305 19.8929 77.5078 20.7246 79.1059 21.3188C81.3427 22.1107 83.3799 22.3878 85.7762 22.3878C88.3325 22.3878 91.0088 22.0315 93.1259 20.2891C94.8433 18.9028 95.4423 17.2 95.4423 14.9826C95.4423 14.0317 95.3223 13.0814 94.5636 12.0913C94.1241 11.4974 93.4852 10.9033 92.5665 10.4675C94.1641 9.83404 94.8033 8.28955 94.8033 6.74496C94.8033 5.67554 94.4836 3.57681 92.1273 1.95304C90.0902 0.685471 87.454 0.448242 85.7364 0.448242C83.5398 0.448242 81.6222 0.76506 79.9047 1.35879C78.2672 1.95304 76.6693 2.78482 75.3513 3.73516L77.8277 7.02188C78.8262 6.26969 79.9446 5.63627 81.183 5.20068C82.4213 4.7649 83.8192 4.52715 85.3768 4.52715C86.8546 4.52715 87.8933 4.7252 88.6921 5.04212C89.1315 5.23976 90.25 5.63627 90.25 6.82415C90.25 7.7749 89.571 8.13078 89.0917 8.32914C88.4926 8.60626 87.6933 8.68524 85.8965 8.68524H82.661V12.7646H85.297C87.6932 12.7646 88.9718 12.8834 89.9306 13.3982C90.6892 13.834 91.0887 14.2696 91.0887 15.1801C91.0887 15.9724 90.7693 17.0019 89.4912 17.675C88.5325 18.19 87.0547 18.3882 85.8162 18.3882C84.3785 18.3882 82.7007 18.1505 81.063 17.5564C79.3056 16.9227 78.0273 16.0514 77.1089 15.2595L74.6724 18.784ZM146.983 39.0633C147.322 39.2953 147.756 39.5289 148.165 39.6668C148.819 39.8874 149.534 39.9106 149.768 39.9106C150.318 39.9106 150.966 39.8558 151.512 39.4463C151.924 39.1378 152.121 38.7267 152.121 38.2161C152.121 37.9725 152.078 37.7719 151.934 37.5546C151.81 37.3669 151.618 37.2298 151.43 37.1486C151.864 36.9281 151.899 36.4638 151.899 36.2897C151.899 35.9183 151.758 35.4882 151.29 35.1757C150.787 34.8396 150.085 34.781 149.64 34.781C149.324 34.781 148.782 34.8093 148.235 35.0015C147.894 35.1215 147.474 35.3264 147.135 35.5585L147.685 36.5102C147.954 36.3246 148.235 36.1839 148.528 36.0809C148.89 35.953 149.16 35.9183 149.534 35.9183C149.909 35.9183 150.12 35.9676 150.272 36.0229C150.563 36.1286 150.623 36.3013 150.623 36.4289C150.623 36.5334 150.562 36.634 150.389 36.719C150.328 36.7488 150.188 36.7771 149.827 36.7771H148.844V37.7634H149.792C150.155 37.7634 150.367 37.7736 150.541 37.8331C150.635 37.8651 150.857 37.9492 150.857 38.1931C150.857 38.3438 150.752 38.533 150.517 38.634C150.297 38.729 149.967 38.7616 149.686 38.7616C149.324 38.7616 149.005 38.7221 148.598 38.5875C148.233 38.4667 147.931 38.3204 147.615 38.077L146.983 39.0633ZM200.759 39.7711H201.964V34.8969H200.759V36.5796H198.195V34.8969H196.99V39.7711H198.195V37.7404H200.759V39.7711ZM79.4127 39.7711H80.5715V34.8969H79.6585L77.9495 37.3458L76.2642 34.8969H75.3513V39.7711H76.51V37.16L77.9495 39.0981L79.4127 37.16V39.7711ZM84.407 36.6379L84.9339 37.7288H83.8804L84.407 36.6379ZM85.9756 39.7711H87.31L84.7817 34.8969H84.0325L81.516 39.7711H82.8385L83.3772 38.7151H85.4371L85.9756 39.7711ZM89.425 36.8816V35.9882H91.5553C91.6605 35.9882 91.8477 35.9996 91.9767 36.0809C92.1173 36.1738 92.1289 36.3246 92.1289 36.4289C92.1289 36.5334 92.1054 36.6726 91.9767 36.7771C91.883 36.8584 91.7192 36.8816 91.5786 36.8816H89.425ZM88.2079 34.897V39.7712H89.425V37.9726H91.5904C92 37.9726 92.5034 37.9609 92.9363 37.5316C93.1355 37.3344 93.3695 36.986 93.3695 36.3941C93.3695 36.081 93.3108 35.6632 92.9715 35.3381C92.8192 35.2107 92.4566 34.8971 91.6724 34.8971H88.2077L88.2079 34.897ZM98.2587 39.7712H99.6749L97.4275 36.7928L99.6982 34.8971H98.0597L95.9061 36.6999V34.8971H94.7004V39.7713H95.9061V38.0732L96.5497 37.5259L98.2587 39.7713V39.7712ZM100.619 39.7712H105.454V38.6688H101.825V37.7635H104.084V36.7191H101.825V35.9883H105.266V34.8971H100.619V39.7713V39.7712ZM109.523 36.0229H111.384V34.897H106.457V36.0229H108.317V39.7712H109.523V36.0229H109.523ZM116.18 39.7712H117.397V34.897H112.516V39.7712H113.733V36.0575H116.18V39.7712H116.18ZM122.415 39.7712H123.772L121.396 34.897H120.659L118.283 39.7712H119.641L121.022 36.7191L122.415 39.7712ZM124.658 39.7712H129.492V38.6688H125.864V37.7635H128.123V36.7191H125.864V35.9883H129.305V34.8971H124.658V39.7713V39.7712ZM134.007 32.9009C133.995 33.0752 133.925 33.2725 133.796 33.3999C133.62 33.5509 133.304 33.5509 133.129 33.5509C132.953 33.5509 132.637 33.5509 132.462 33.3999C132.333 33.2725 132.263 33.0752 132.251 32.9009H131.397C131.397 33.2261 131.478 33.7135 131.818 34.0383C132.181 34.3981 132.661 34.433 133.129 34.433C133.597 34.433 134.077 34.3981 134.44 34.0383C134.779 33.7135 134.861 33.2261 134.861 32.9009H134.007ZM131.678 39.7712L134.182 36.8817V39.7712H135.353V34.897H134.51L132.005 37.7868V34.897H130.835V39.7712H131.678ZM141.095 37.9377C140.943 38.1349 140.709 38.3913 140.44 38.5296C140.077 38.7158 139.69 38.7502 139.468 38.7502C138.918 38.7502 138.474 38.6102 138.181 38.3439C137.912 38.0998 137.747 37.7521 137.747 37.346C137.747 36.986 137.874 36.6587 138.122 36.3941C138.506 35.986 139.035 35.93 139.445 35.93C139.714 35.93 140.076 35.9558 140.393 36.0926C140.532 36.1526 140.791 36.2898 141.025 36.5684L141.996 35.8953C141.774 35.6167 141.478 35.3447 141.025 35.1177C140.506 34.8576 140.042 34.7811 139.491 34.7811C138.742 34.7811 137.909 34.9305 137.209 35.6399C136.845 36.0093 136.507 36.5684 136.507 37.346C136.507 38.0422 136.764 38.6694 137.174 39.0868C137.63 39.5511 138.391 39.9107 139.433 39.9107C139.597 39.9107 140.311 39.8994 140.92 39.6089C141.306 39.4241 141.739 39.075 142.066 38.5994L141.095 37.9377ZM205.526 36.638L206.053 37.7289H204.999L205.526 36.638ZM207.095 39.7712H208.429L205.901 34.897H205.151L202.635 39.7712H203.958L204.496 38.7152H206.556L207.095 39.7712ZM210.329 38.6688V37.7173H212.084C212.4 37.7173 212.507 37.7563 212.564 37.7869C212.737 37.8793 212.775 38.0304 212.775 38.1698C212.775 38.3904 212.697 38.5042 212.599 38.576C212.466 38.674 212.279 38.6688 212.131 38.6688H210.329ZM210.329 36.6727V35.9416H211.955C212.084 35.9416 212.204 35.9431 212.307 35.9997C212.41 36.0567 212.459 36.1544 212.459 36.2841C212.459 36.4601 212.367 36.561 212.33 36.5916C212.23 36.6747 212.08 36.6727 211.979 36.6727H210.329ZM209.111 34.8971V39.7713H212.213C212.576 39.7713 213.116 39.757 213.536 39.4233C213.942 39.0999 214.016 38.6574 214.016 38.2978C214.016 38.0305 213.965 37.7975 213.793 37.5548C213.606 37.2913 213.372 37.1602 213.243 37.1022C213.629 36.8238 213.7 36.4138 213.7 36.141C213.7 35.6866 213.495 35.3525 213.231 35.1643C212.867 34.9041 212.407 34.8972 212.073 34.8972H209.111V34.8971ZM216.699 37.7173H218.479C218.607 37.7173 218.762 37.7198 218.888 37.81C218.968 37.8662 219.04 37.9726 219.04 38.1698C219.04 38.3321 219.001 38.4484 218.923 38.5296C218.795 38.6643 218.626 38.6688 218.502 38.6688H216.699V37.7173ZM216.699 36.6146V34.8971H215.482V39.7713H218.479C218.888 39.7713 219.429 39.7108 219.848 39.3073C220.22 38.9495 220.281 38.5297 220.281 38.1699C220.281 37.8101 220.206 37.3584 219.872 37.0328C219.473 36.6435 218.872 36.6147 218.619 36.6147H216.699V36.6146ZM220.831 39.7828H222.049V34.897H220.831V39.7828ZM227.331 39.7712H228.747L226.5 36.7928L228.77 34.8971H227.132L224.978 36.6999V34.8971H223.773V39.7713H224.978V38.0732L225.622 37.5259L227.331 39.7713V39.7712ZM231.888 35.8721C232.976 35.8721 233.62 36.5567 233.62 37.3225C233.62 38.1118 233 38.7965 231.888 38.7965C230.799 38.7965 230.167 38.1232 230.167 37.3225C230.167 36.5451 230.799 35.8721 231.888 35.8721ZM231.888 39.9107C233.632 39.9107 234.849 38.808 234.849 37.3344C234.849 35.8488 233.632 34.7811 231.888 34.7811C230.155 34.7811 228.938 35.8604 228.938 37.3344C228.938 38.7851 230.155 39.9107 231.888 39.9107ZM237.346 38.6688V37.7173H239.101C239.417 37.7173 239.524 37.7563 239.581 37.7869C239.754 37.8793 239.792 38.0304 239.792 38.1698C239.792 38.3904 239.713 38.5042 239.616 38.576C239.483 38.674 239.296 38.6688 239.148 38.6688H237.346ZM237.346 36.6727V35.9416H238.972C239.101 35.9416 239.221 35.9431 239.324 35.9997C239.427 36.0567 239.476 36.1544 239.476 36.2841C239.476 36.4601 239.384 36.561 239.347 36.5916C239.247 36.6747 239.097 36.6727 238.996 36.6727H237.346ZM236.128 34.8971V39.7713H239.23C239.593 39.7713 240.133 39.757 240.553 39.4233C240.959 39.0999 241.032 38.6574 241.032 38.2978C241.032 38.0305 240.982 37.7975 240.81 37.5548C240.623 37.2913 240.389 37.1602 240.26 37.1022C240.646 36.8238 240.716 36.4138 240.716 36.141C240.716 35.6866 240.512 35.3525 240.248 35.1643C239.884 34.9041 239.424 34.8972 239.09 34.8972H236.128V34.8971ZM157.415 39.7713H158.621V34.8971H157.415V36.5798H154.852V34.8971H153.646V39.7713H154.852V37.7406H157.415V39.7713ZM162.183 36.6381L162.709 37.729H161.656L162.183 36.6381ZM163.751 39.7713H165.085L162.557 34.8971H161.808L159.292 39.7713H160.614L161.153 38.7153H163.213L163.751 39.7713ZM169.525 39.7713H170.731V34.8971H169.525V36.5798H166.962V34.8971H165.756V39.7713H166.962V37.7406H169.525V39.7713ZM173.274 39.7713L175.779 36.8818V39.7713H176.949V34.8971H176.107L173.602 37.7869V34.8971H172.431V39.7713H173.274ZM181.834 32.901C181.822 33.0753 181.756 33.2783 181.623 33.4C181.453 33.5556 181.131 33.551 180.956 33.551C180.78 33.551 180.459 33.5556 180.289 33.4C180.155 33.2783 180.09 33.0753 180.078 32.901H179.224C179.224 33.2262 179.309 33.711 179.645 34.0384C180.01 34.3944 180.488 34.4331 180.956 34.4331C181.424 34.4331 181.901 34.3944 182.267 34.0384C182.602 33.711 182.688 33.2262 182.688 32.901H181.834ZM179.505 39.7713L182.009 36.8818V39.7713H183.18V34.8971H182.337L179.832 37.7869V34.8971H178.662V39.7713H179.505ZM188.723 39.7713L191.227 36.8818V39.7713H192.398V34.8971H191.555L189.05 37.7869V34.8971H187.88V39.7713H188.723ZM113.736 21.8734H117.97V0.884032H113.736V8.4875H104.11V0.884032H99.8759V21.8734H104.11V12.4476H113.736V21.8734ZM131.63 7.06219L134.466 12.6855H128.834L131.63 7.06219H131.63ZM139.06 21.8734H143.693L133.228 0.884032H130.073L119.687 21.8734H124.321L126.837 16.6853H136.463L139.06 21.8734ZM149.644 18.0317V12.6062H158.232C159.071 12.6062 160.189 12.8041 160.788 13.3191C160.948 13.438 161.547 13.9923 161.547 15.2199C161.547 16.0118 161.228 16.9625 160.628 17.4375C159.95 18.0315 158.831 18.0315 157.912 18.0315H149.644V18.0317ZM149.644 8.76493V4.7253H157.433H157.753C158.232 4.7253 158.951 4.84407 159.43 5.08192C160.189 5.5174 160.229 6.19061 160.229 6.6264C160.229 7.69541 159.75 8.17079 159.43 8.36873C158.951 8.68534 158.072 8.76483 157.433 8.76483H149.644V8.76493ZM145.41 0.884032V21.8734H158.392C160.269 21.8734 162.346 21.6753 164.063 19.933C164.982 19.0219 165.861 17.5962 165.861 15.339C165.861 14.2298 165.661 13.24 165.062 12.1705C164.303 10.9431 163.464 10.4282 162.706 10.1116C163.225 9.67578 164.463 8.68554 164.463 6.15102C164.463 5.20088 164.263 3.81445 163.105 2.66605C161.507 1.08198 158.951 0.884032 157.034 0.884032H145.41ZM174.488 17.9527V12.5271H181.678C182.437 12.5271 183.356 12.5664 184.035 13.2004C184.674 13.7945 184.794 14.6261 184.794 15.2597C184.794 15.7743 184.714 16.7645 183.915 17.3983C183.276 17.9131 182.437 17.9526 181.678 17.9526H174.488V17.9527ZM174.488 8.52739V0.884133H170.295V21.8735H181.519C183.316 21.8735 185.393 21.6359 186.991 20.0913C188.069 19.1015 188.948 17.4378 188.948 15.0222C188.948 13.6359 188.588 12.2104 187.43 10.8243C185.713 8.8839 183.276 8.52739 180.041 8.52739H174.488ZM190.985 21.8735H195.219V0.884133H190.985V21.8735ZM216.109 21.8735H221.221L211.675 8.72524L220.662 0.884133H215.11L204.925 9.55661V0.884133H200.731V21.8735H204.925V14.547L208.56 11.4977L216.109 21.8736V21.8735ZM236.839 8.24996V21.8735H241.033V0.884133H238.117L227.372 14.5074V0.884133H223.178V21.8735H226.054L236.839 8.24996Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header__btn">
+                                    <a class="btn blue">
+                                        Каталог курсов
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__content_right">
+                                <div class="header__right_btn">
+                                    <a class="btn header_blue">Войти</a>
+                                </div>
+                                <div class="manu__burger">
+                                    <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="8" y="8" width="24" height="2" rx="1" fill="#008CFF"/>
+                                        <rect x="8" y="17" width="24" height="2" rx="1" fill="#008CFF"/>
+                                        <rect x="8" y="26" width="24" height="2" rx="1" fill="#008CFF"/>
+                                    </svg>
+                                </div>
+                                <div class="manu__burger_two">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.807617" y="17.7783" width="24" height="2" rx="1" transform="rotate(-45 0.807617 17.7783)" fill="#008CFF"/>
+                                        <rect x="17.7783" y="19.1924" width="24" height="2" rx="1" transform="rotate(-135 17.7783 19.1924)" fill="#008CFF"/>
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobil_menu">
+                <div class="header__mobil_menu_link">
+                    <a href="">Каталог курсов</a>
+                </div>
+                <div class="header__mobil_menu_link">
+                    <a href="">Каталог школ</a>
+                </div>
+            </div>
+        </header>
+        <main>
+<div class="breadcrumbs__container">
+    <div class="container">
+        <nav>
+            <ul class="breadcrumbs">
+                <li class="breadcrumb-item"><a href="#" class="grey__link">Главная</a></li>
+                <li class="breadcrumb-item"><p>Каталог курсов</p></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="body catalog__course">
+    <div class="container">
+        <div class="body_catalog__course_container">
+            <div class="catalog__course_info">
+                <a href="" target="_blank">
+                    <div class="catalog__course_background">
+                        
+                    </div>
+                </a>
+                <div class="catalog__course_information">
+                    <div class="course_dir_header">
+                        <h1>Каталог курсов</h1>
+                    </div>
+                    <div class="course_dir_text">
+                        <p>Мы собрали лучшие курсы по множеству направлений. Определяйся с категорией или воспользуйся фильтром.</p>
+                    </div>
+                    
+                </div>
+                <div class="catalog__course_card_menu_filter">
+                    
+                    <div class="page__course_filter_container">
+                        <div class="page__school_filter">
+    
+    <div class="form__teacher">
+        <div class="filter__header top">
+            <p>
+                Форма обучения
+            </p>
+        </div>
+        <div class="filter__checkbox">
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_1" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_1">Онлайн курс</label>
+                <div class="block__show_none">
+                    <div class="block__show">
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M-3.0598e-07 7L11.25 13.0622L11.25 0.937823L-3.0598e-07 7Z" fill="#008CFF"/>
+                        </svg>                        
+                        <p>Показать</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="checkbox__label_inp">
+                <div class="checkbox">
+                    <input type="checkbox"  id="checkbox__filter_2" class="checkbox__input">
+                    <label class="checkbox__label" for="checkbox__filter_2">Офлайн курс</label>
+                </div>
+            </div>
+            <div class="checkbox__label_inp">
+                <div class="checkbox">
+                    <input type="checkbox"  id="checkbox__filter_3" class="checkbox__input">
+                    <label class="checkbox__label" for="checkbox__filter_3">Офлайн курс</label>
+                </div>
+            </div>
+            
+        </div>
+        <div class="filter__header">
+            <p>
+                Город:
+            </p>
+        </div>
+        <div class="school__select">
+            <div class="personal-settings__input-container">
+                <div id="select-city-two" class="custom-select">
+                  <div id="select-city__btn-two" class="custom-select__btn">
+                    <span>Выберите</span>
+                    <svg
+                      width="9"
+                      height="6"
+                      viewBox="0 0 9 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 6L8.39711 0H0.602886L4.5 6Z"
+                        fill="#808080"
+                      />
+                    </svg>
+                  </div>
+                  <div id="select-city__content-two" class="custom-select__content">
+                    <ul id="select-city__options-two" class="options"></ul>
+                  </div>
+                </div>
+                <input id="city-two" type="text" hidden />
+              </div>
+        </div>
+        
+        <div class="filter__header">
+            <p>
+                Направления
+            </p>
+        </div>
+        <div class="checkbox_all">
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_4" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_4">Направление 1</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_5" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_5">Направление 2</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_6" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_6">Направление 3</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_7" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_7">Направление 4</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_8" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_8">Направление 5</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_9" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_9">Направление 6</label>
+            </div>
+            <div class="checkbox none">
+                <input type="checkbox"  id="checkbox__filter_10" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_10">Направление 5</label>
+            </div>
+            <div class="checkbox none">
+                <input type="checkbox"  id="checkbox__filter_11" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_11">Направление 6</label>
+            </div>
+            <div class="page__school_select">
+
+                <p class="page__school_link_blue">Показать все</p>
+                <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4L6 0H0L3 4Z" fill="#008CFF"/>
+                    </svg>
+            </div>
+        </div>
+        
+        <div class="filter__header">
+            <p>
+                Цена:
+            </p>
+        </div>
+        <div class="page__school_price_container">
+            <div class="page__school_price_container_one">
+                <div class="page__school_price_container_p">
+                    <p>От</p>
+                </div>
+                <div class="page__school_price_container_input">
+                    <input type="text" class="inp price">
+                </div>
+            </div>
+            <div class="page__school_price_container_two">
+                <div class="page__school_price_container_p">
+                    <p>До</p>
+                </div>
+                <div class="page__school_price_container_input">
+                    <input type="text" class="inp price">
+                </div>
+            </div>
+        </div>
+        <div class="filter__header">
+            <p>
+                Продолжительность курса
+            </p>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox"  id="checkbox__filter_12" class="checkbox__input">
+            <label class="checkbox__label" for="checkbox__filter_12">До 1 месяца</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox"  id="checkbox__filter_13" class="checkbox__input">
+            <label class="checkbox__label" for="checkbox__filter_13">От 1  до 3 месяцев</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox"  id="checkbox__filter_14" class="checkbox__input">
+            <label class="checkbox__label" for="checkbox__filter_14">От 3 до 6 месяцев</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox"  id="checkbox__filter_15" class="checkbox__input">
+            <label class="checkbox__label" for="checkbox__filter_15">От 6 месяцев до 1 года</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox"  id="checkbox__filter_16" class="checkbox__input">
+            <label class="checkbox__label" for="checkbox__filter_16">От 1 года</label>
+        </div>
+        <div class="filter__header">
+            <p>
+                Формат обучения
+            </p>
+        </div>
+        <div class="checkbox_all">
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_17" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_17">Онлайн-курс</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_18" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_18">Вебинар</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_19" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_19">Мастер-класс</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_20" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_20">Марафон</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_21" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_21">Практикум</label>
+            </div>
+            <div class="checkbox none">
+                <input type="checkbox"  id="checkbox__filter_22" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_22">Направление 5</label>
+            </div>
+            <div class="checkbox none">
+                <input type="checkbox"  id="checkbox__filter_23" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_23">Направление 6</label>
+            </div>
+            <div class="page__school_select">
+                <p class="page__school_link_blue">Показать все</p>
+                <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4L6 0H0L3 4Z" fill="#008CFF"/>
+                    </svg>
+            </div>
+        </div>
+        <div class="filter__header">
+            <p>
+                Школа/автор
+            </p>
+        </div>
+        <div class="checkbox_all">
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_24" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_24">Акулов Иван Борисович</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_25" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_25">Школа бабушки Клавы</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_26" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_26">Skillbox</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_27" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_27">Школа Адекватных Родителей</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"  id="checkbox__filter_28" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_28">Иванова Светлана Ивановна</label>
+            </div>
+            <div class="checkbox none">
+                <input type="checkbox"  id="checkbox__filter_29" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_29">Направление 5</label>
+            </div>
+            <div class="checkbox none">
+                <input type="checkbox"  id="checkbox__filter_30" class="checkbox__input">
+                <label class="checkbox__label" for="checkbox__filter_30">Направление 6</label>
+            </div>
+            <div class="page__school_select">
+                <p class="page__school_link_blue">Показать все</p>
+                <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4L6 0H0L3 4Z" fill="#008CFF"/>
+                </svg>
+            </div>
+        </div>
+        <div class="btn__container">
+            <a href="" class="btn blue">Сбросить фильтры</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/filter.js"></script>
+<script src="js/selectCityTwo.js"></script>
+                        <a href="" target="_blank">
+                            <div class="banner__container">
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="school__cards_container_menu" id="course__scroll">
+                        <div class="school__menu_mobile">
+    <div class="school__select_mobil">
+        <div class="school__menu_mobile_svg">
+            <svg width="29" height="21" viewBox="0 0 29 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.04445 0.0870471C4.17184 0.325033 3.34455 1.07866 3.0669 1.88894L2.97624 2.14959L1.72398 2.16659C0.517053 2.18359 0.46039 2.18926 0.284733 2.31392C-0.0949111 2.5859 -0.0949111 3.19786 0.284733 3.46985C0.46039 3.59451 0.517053 3.60017 1.72398 3.61717L2.97624 3.63417L3.0669 3.89482C3.19156 4.26313 3.45221 4.64845 3.79786 4.97143C4.71581 5.84404 5.9624 6.02536 7.11833 5.4644C7.69063 5.18675 8.38193 4.3708 8.54058 3.7985L8.57458 3.65684L18.5473 3.62851L28.5144 3.60017L28.6957 3.46985C29.0754 3.19786 29.0754 2.5859 28.6957 2.31392L28.5144 2.18359L18.5473 2.15526L8.57458 2.12693L8.54058 1.98527C8.38193 1.41297 7.69063 0.597017 7.11833 0.319367C6.4667 0.00205183 5.68475 -0.082943 5.04445 0.0870471ZM6.35904 1.56029C6.61403 1.66229 6.88035 1.91161 7.056 2.20626C7.18633 2.42724 7.20899 2.52924 7.20899 2.89188C7.20899 3.25453 7.18633 3.35652 7.056 3.57751C6.87468 3.88349 6.61403 4.12148 6.33071 4.24047C6.07573 4.34813 5.50909 4.34813 5.24844 4.2348C4.72714 4.01948 4.3475 3.45852 4.3475 2.89188C4.3475 2.39891 4.56848 2.00793 5.04445 1.64529C5.3221 1.43563 5.95673 1.39597 6.35904 1.56029Z" fill="#008CFF"/>
+                <path d="M22.5138 7.3164C21.6298 7.52606 20.6609 8.41567 20.4456 9.23162L20.4059 9.37895L10.4331 9.40728L0.466056 9.43561L0.284733 9.56594C-0.0949111 9.83792 -0.0949111 10.4499 0.284733 10.7219L0.466056 10.8522L10.4331 10.8805L20.4059 10.9089L20.4399 11.0505C20.5985 11.6228 21.2898 12.4388 21.8621 12.7164C22.7404 13.1414 23.6924 13.1414 24.531 12.7164C25.0919 12.4331 25.7152 11.7248 25.9136 11.1468L26.0042 10.8862L27.2565 10.8692C28.4634 10.8522 28.5201 10.8465 28.6957 10.7219C29.0754 10.4499 29.0754 9.83792 28.6957 9.56594C28.5201 9.44128 28.4634 9.43561 27.2565 9.41861L26.0042 9.40161L25.9136 9.14096C25.6302 8.31934 24.803 7.57139 23.9133 7.33907C23.562 7.2484 22.8594 7.23707 22.5138 7.3164ZM23.7604 8.81231C24.038 8.92564 24.3553 9.24296 24.497 9.54894C24.837 10.2742 24.48 11.1752 23.732 11.4868C23.4714 11.6002 22.9047 11.6002 22.6498 11.4925C22.1738 11.2942 21.8111 10.8069 21.7601 10.3026C21.6468 9.20329 22.7348 8.39301 23.7604 8.81231Z" fill="#008CFF"/>
+                <path d="M13.7706 14.5923C12.9547 14.8132 12.2577 15.3799 11.9121 16.0995C11.8044 16.3318 11.7137 16.5471 11.7137 16.5868C11.7137 16.6435 10.5748 16.6605 6.09273 16.6718L0.466056 16.6888L0.284733 16.8191C-0.0949111 17.0911 -0.0949111 17.7031 0.284733 17.9751L0.466056 18.1054L6.09273 18.1224C10.5748 18.1337 11.7137 18.1507 11.7137 18.2074C11.7137 18.247 11.8044 18.4624 11.9121 18.6947C12.7507 20.4456 15.1702 20.8309 16.5471 19.42C16.8531 19.114 17.2667 18.4114 17.2667 18.2074C17.2667 18.1507 18.4057 18.1337 22.8934 18.1224L28.5144 18.1054L28.6957 17.9751C29.0754 17.7031 29.0754 17.0911 28.6957 16.8191L28.5144 16.6888L22.8934 16.6718C18.4057 16.6605 17.2667 16.6435 17.2667 16.5868C17.2667 16.5471 17.1761 16.3262 17.0684 16.0995C16.4961 14.9096 15.0512 14.2523 13.7706 14.5923ZM15.1702 16.1392C16.1845 16.6435 16.1788 18.145 15.1532 18.6664C14.2862 19.1083 13.2833 18.6324 13.0793 17.6804C12.9207 16.9381 13.3796 16.2072 14.1389 16.0032C14.4789 15.9068 14.7792 15.9465 15.1702 16.1392Z" fill="#008CFF"/>
+            </svg>                                    
+        </div>
+        <div class="school__menu_mobile_select">
+            <div class="school__mobile_header">
+                <div class="sorting__container">
+                    <div class="school__mobile_header_text">
+                        <p>Сортировать</p>
+                    </div>
+                    <div class="school__mobile_header_svg">
+                        <svg width="4" height="3" viewBox="0 0 4 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 3L3.73205 0.75H0.267949L2 3Z" fill="#808080"/>
+                        </svg>                                            
+                    </div>
+                </div>
+                <div class="sorging__body">
+                    <div class="sorging__item">
+                        <p>По популярности</p>
+                    </div>
+                    <div class="sorging__item">
+                        <p>По стоимости min</p>
+                    </div>
+                    <div class="sorging__item">
+                        <p>По стоимости max</p>
+                    </div>
+                </div>
+            </div>
+            <div class="school__select_mobil_body">
+                <div class="reset">
+                    <div class="page__school_reset">
+                        <div class="back__form_learning">
+                            <div>
+                                <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM15 3.5L1 3.5V4.5L15 4.5V3.5Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="back__form_learning_text">
+                                Фильтры
+                            </div>
+                        </div>
+                        <div class="reset__container">
+                            <div class="resert__text">
+                                <a href="#" onclick="return false;">Сбросить</a>
+                            </div>
+                            <div class="reset_svg">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.36328 1.86328L13.636 14.136" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1.36328 14.136L13.636 1.86328" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="school__filter_mobile_checkbox">
+                    <div class="school__select_mobil_item">
+                        <div class="checkbox_two">
+                            <input type="checkbox"  id="checkbox_401" class="checkbox__input_two">
+                            <label class="checkbox__label_two" for="checkbox_401">Онлайн курс</label>
+                        </div>
+                    </div>
+                    <div class="school__select_mobil_item">
+                        <div class="checkbox_two">
+                            <input type="checkbox"  id="checkbox_402" class="checkbox__input_two">
+                            <label class="checkbox__label_two" for="checkbox_402">Онлайн курс</label>
+                        </div>
+                    </div>
+                    <div class="school__select_mobil_item">
+                        <div class="checkbox_two">
+                            <input type="checkbox"  id="checkbox_403" class="checkbox__input_two">
+                            <label class="checkbox__label_two" for="checkbox_403">Смешанная</label>
+                        </div>
+                    </div>
+                    
+                    <div class="school_select_mobil_btn">
+                        <div class="btn__container">
+                            <button class="btn blue__background">Применить</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="school__filter_mobile">
+                    <div class="school__filter_btn top">
+                        <p>Форма обучения</p>
+                        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 6L5.39043 6.31235C5.53652 6.12974 5.53652 5.87026 5.39043 5.68765L5 6ZM4.60957 5.68765L0.609565 10.6877L1.39043 11.3123L5.39043 6.31235L4.60957 5.68765ZM0.609566 1.31235L4.60957 6.31235L5.39043 5.68765L1.39043 0.687652L0.609566 1.31235Z" fill="#878787"/>
+                        </svg>
+                    </div>
+                    <div class="filter__header">
+                        <p>
+                            Город:
+                        </p>
+                    </div>
+                    <div class="school__select">
+                        <!-- Потом переделеать -->
+                        <!-- <select   aria-placeholder="asd">
+                            <option value="">Выбрать направления</option>
+                        </select> -->
+                        <div class="personal-settings__input-container">
+                            <!-- <label for="city">Город</label> -->
+                            <div id="select-city" class="custom-select">
+                              <div id="select-city__btn" class="custom-select__btn">
+                                <span>Выберите</span>
+                                <svg
+                                  width="9"
+                                  height="6"
+                                  viewBox="0 0 9 6"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M4.5 6L8.39711 0H0.602886L4.5 6Z"
+                                    fill="#808080"
+                                  />
+                                </svg>
+                              </div>
+                              <div id="select-city__content" class="custom-select__content">
+                                <ul id="select-city__options" class="options"></ul>
+                              </div>
+                            </div>
+                            <input id="city" type="text" hidden />
+                        </div>
+                    </div>
+                    <div class="filter__header">
+                        <p>
+                            Цена:
+                        </p>
+                    </div>
+                    <div class="page__school_price_container">
+                        <div class="page__school_price_container_one">
+                            <div class="page__school_price_container_p">
+                                <p>От</p>
+                            </div>
+                            <div class="page__school_price_container_input">
+                                <input type="text" class="inp price">
+                            </div>
+                        </div>
+                        <div class="page__school_price_container_two">
+                            <div class="page__school_price_container_p">
+                                <p>До</p>
+                            </div>
+                            <div class="page__school_price_container_input">
+                                <input type="text" class="inp price">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__header">
+                        <p>
+                            Направления
+                        </p>
+                    </div>
+                    <div class="school__filter_direction">
+                        <div class="directions">
+    <div class="direction design">
+        <div class="directions__design_text">
+            <p>Дизайн</p>
+        </div>
+        <div class="directions__svg">
+            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.89671 2.9999L5.814 1.08261C6.06172 0.834891 6.06172 0.433507 5.814 0.185789C5.56628 -0.0619295 5.16489 -0.0619295 4.91719 0.185789L2.9999 2.10329L1.08261 0.186004C0.834891 -0.0617138 0.433507 -0.0617138 0.185789 0.186004C-0.0619295 0.433722 -0.0619295 0.835106 0.185789 1.08282L2.10308 3.00011L0.185789 4.9174C-0.0619295 5.16512 -0.0619295 5.5665 0.185789 5.81421C0.433507 6.06194 0.834891 6.06194 1.08261 5.81421L2.9999 3.89693L4.91719 5.81421C5.1649 6.06194 5.56629 6.06194 5.814 5.81421C6.06172 5.56649 6.06172 5.16511 5.814 4.9174L3.89671 2.9999Z" fill="#008CFF"/>
+            </svg>                                    
+        </div>
+    </div>
+    <div class="direction analytics">
+        <div class="directions__analytics_text">
+            <p>Дизайн</p>
+        </div>
+        <div class="directions__svg">
+            <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.39671 2.9999L6.314 1.08261C6.56172 0.834891 6.56172 0.433507 6.314 0.185789C6.06628 -0.0619295 5.66489 -0.0619295 5.41719 0.185789L3.4999 2.10329L1.58261 0.186004C1.33489 -0.0617138 0.933507 -0.0617138 0.685789 0.186004C0.43807 0.433722 0.43807 0.835106 0.685789 1.08282L2.60308 3.00011L0.685789 4.9174C0.43807 5.16512 0.43807 5.5665 0.685789 5.81421C0.933507 6.06194 1.33489 6.06194 1.58261 5.81421L3.4999 3.89693L5.41719 5.81421C5.6649 6.06194 6.06629 6.06194 6.314 5.81421C6.56172 5.56649 6.56172 5.16511 6.314 4.9174L4.39671 2.9999Z" fill="#FE1C1C"/>
+            </svg>                                                                 
+        </div>
+    </div>
+    <div class="direction skills">
+        <div class="directions__skills_text">
+            <p>Soft Skills</p>
+        </div>
+        <div class="directions__svg">
+            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.89671 2.9999L5.814 1.08261C6.06172 0.834891 6.06172 0.433507 5.814 0.185789C5.56628 -0.0619295 5.16489 -0.0619295 4.91719 0.185789L2.9999 2.10329L1.08261 0.186004C0.834891 -0.0617138 0.433507 -0.0617138 0.185789 0.186004C-0.0619295 0.433722 -0.0619295 0.835106 0.185789 1.08282L2.10308 3.00011L0.185789 4.9174C-0.0619295 5.16512 -0.0619295 5.5665 0.185789 5.81421C0.433507 6.06194 0.834891 6.06194 1.08261 5.81421L2.9999 3.89693L4.91719 5.81421C5.1649 6.06194 5.56629 6.06194 5.814 5.81421C6.06172 5.56649 6.06172 5.16511 5.814 4.9174L3.89671 2.9999Z" fill="#009229"/>
+                </svg>                                                                                             
+        </div>
+    </div>
+    <div class="direction design">
+        <div class="directions__design_text">
+            <p>Дизайн</p>
+        </div>
+        <div class="directions__svg">
+            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.89671 2.9999L5.814 1.08261C6.06172 0.834891 6.06172 0.433507 5.814 0.185789C5.56628 -0.0619295 5.16489 -0.0619295 4.91719 0.185789L2.9999 2.10329L1.08261 0.186004C0.834891 -0.0617138 0.433507 -0.0617138 0.185789 0.186004C-0.0619295 0.433722 -0.0619295 0.835106 0.185789 1.08282L2.10308 3.00011L0.185789 4.9174C-0.0619295 5.16512 -0.0619295 5.5665 0.185789 5.81421C0.433507 6.06194 0.834891 6.06194 1.08261 5.81421L2.9999 3.89693L4.91719 5.81421C5.1649 6.06194 5.56629 6.06194 5.814 5.81421C6.06172 5.56649 6.06172 5.16511 5.814 4.9174L3.89671 2.9999Z" fill="#008CFF"/>
+            </svg>                                    
+        </div>
+    </div>
+    <div class="direction analytics">
+        <div class="directions__analytics_text">
+            <p>Дизайн</p>
+        </div>
+        <div class="directions__svg">
+            <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.39671 2.9999L6.314 1.08261C6.56172 0.834891 6.56172 0.433507 6.314 0.185789C6.06628 -0.0619295 5.66489 -0.0619295 5.41719 0.185789L3.4999 2.10329L1.58261 0.186004C1.33489 -0.0617138 0.933507 -0.0617138 0.685789 0.186004C0.43807 0.433722 0.43807 0.835106 0.685789 1.08282L2.60308 3.00011L0.685789 4.9174C0.43807 5.16512 0.43807 5.5665 0.685789 5.81421C0.933507 6.06194 1.33489 6.06194 1.58261 5.81421L3.4999 3.89693L5.41719 5.81421C5.6649 6.06194 6.06629 6.06194 6.314 5.81421C6.56172 5.56649 6.56172 5.16511 6.314 4.9174L4.39671 2.9999Z" fill="#FE1C1C"/>
+                </svg>                                                                 
+        </div>
+    </div>
+    <div class="direction skills">
+        <div class="directions__skills_text">
+            <p>Soft Skills</p>
+        </div>
+        <div class="directions__svg">
+            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.89671 2.9999L5.814 1.08261C6.06172 0.834891 6.06172 0.433507 5.814 0.185789C5.56628 -0.0619295 5.16489 -0.0619295 4.91719 0.185789L2.9999 2.10329L1.08261 0.186004C0.834891 -0.0617138 0.433507 -0.0617138 0.185789 0.186004C-0.0619295 0.433722 -0.0619295 0.835106 0.185789 1.08282L2.10308 3.00011L0.185789 4.9174C-0.0619295 5.16512 -0.0619295 5.5665 0.185789 5.81421C0.433507 6.06194 0.834891 6.06194 1.08261 5.81421L2.9999 3.89693L4.91719 5.81421C5.1649 6.06194 5.56629 6.06194 5.814 5.81421C6.06172 5.56649 6.06172 5.16511 5.814 4.9174L3.89671 2.9999Z" fill="#009229"/>
+                </svg>                                                                                             
+        </div>
+    </div>
+    <div class="direction analytics">
+        <div class="directions__analytics_text">
+            <p>Дизайн</p>
+        </div>
+        <div class="directions__svg">
+            <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.39671 2.9999L6.314 1.08261C6.56172 0.834891 6.56172 0.433507 6.314 0.185789C6.06628 -0.0619295 5.66489 -0.0619295 5.41719 0.185789L3.4999 2.10329L1.58261 0.186004C1.33489 -0.0617138 0.933507 -0.0617138 0.685789 0.186004C0.43807 0.433722 0.43807 0.835106 0.685789 1.08282L2.60308 3.00011L0.685789 4.9174C0.43807 5.16512 0.43807 5.5665 0.685789 5.81421C0.933507 6.06194 1.33489 6.06194 1.58261 5.81421L3.4999 3.89693L5.41719 5.81421C5.6649 6.06194 6.06629 6.06194 6.314 5.81421C6.56172 5.56649 6.56172 5.16511 6.314 4.9174L4.39671 2.9999Z" fill="#FE1C1C"/>
+                </svg>                                                                 
+        </div>
+    </div>
+    <div class="direction skills">
+        <div class="directions__skills_text">
+            <p>Soft Skills</p>
+        </div>
+        <div class="directions__svg">
+            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.89671 2.9999L5.814 1.08261C6.06172 0.834891 6.06172 0.433507 5.814 0.185789C5.56628 -0.0619295 5.16489 -0.0619295 4.91719 0.185789L2.9999 2.10329L1.08261 0.186004C0.834891 -0.0617138 0.433507 -0.0617138 0.185789 0.186004C-0.0619295 0.433722 -0.0619295 0.835106 0.185789 1.08282L2.10308 3.00011L0.185789 4.9174C-0.0619295 5.16512 -0.0619295 5.5665 0.185789 5.81421C0.433507 6.06194 0.834891 6.06194 1.08261 5.81421L2.9999 3.89693L4.91719 5.81421C5.1649 6.06194 5.56629 6.06194 5.814 5.81421C6.06172 5.56649 6.06172 5.16511 5.814 4.9174L3.89671 2.9999Z" fill="#009229"/>
+                </svg>                                                                                             
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="school__filter_btn">
+                        <p>Продолжительность курса</p>
+                        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 6L5.39043 6.31235C5.53652 6.12974 5.53652 5.87026 5.39043 5.68765L5 6ZM4.60957 5.68765L0.609565 10.6877L1.39043 11.3123L5.39043 6.31235L4.60957 5.68765ZM0.609566 1.31235L4.60957 6.31235L5.39043 5.68765L1.39043 0.687652L0.609566 1.31235Z" fill="#878787"/>
+                        </svg>
+                    </div>
+                    <div class="school__filter_btn">
+                        <p>Формат обучения</p>
+                        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 6L5.39043 6.31235C5.53652 6.12974 5.53652 5.87026 5.39043 5.68765L5 6ZM4.60957 5.68765L0.609565 10.6877L1.39043 11.3123L5.39043 6.31235L4.60957 5.68765ZM0.609566 1.31235L4.60957 6.31235L5.39043 5.68765L1.39043 0.687652L0.609566 1.31235Z" fill="#878787"/>
+                        </svg>
+                    </div>
+                    <div class="school__filter_btn">
+                        <p>Школа/автор</p>
+                        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 6L5.39043 6.31235C5.53652 6.12974 5.53652 5.87026 5.39043 5.68765L5 6ZM4.60957 5.68765L0.609565 10.6877L1.39043 11.3123L5.39043 6.31235L4.60957 5.68765ZM0.609566 1.31235L4.60957 6.31235L5.39043 5.68765L1.39043 0.687652L0.609566 1.31235Z" fill="#878787"/>
+                        </svg>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <script src="js/personal_area/citySelect/citySelect.js"></script> -->
+
+                        <div class="sorting__menu_container">
+                            <div class="sorting">
+    <div><p>Сортировать по:</p></div>
+    <div><a class="costs__link border" href="">Популярности</a></div>
+    <div class="costs">
+        <a class="costs__link" href="">Стоимости</a>
+        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.35355 0.646446C4.15829 0.451184 3.84171 0.451184 3.64645 0.646446L0.464466 3.82843C0.269204 4.02369 0.269204 4.34027 0.464466 4.53553C0.659729 4.7308 0.976311 4.7308 1.17157 4.53553L4 1.70711L6.82843 4.53553C7.02369 4.7308 7.34027 4.7308 7.53553 4.53553C7.7308 4.34027 7.7308 4.02369 7.53553 3.82843L4.35355 0.646446ZM4.5 12L4.5 1L3.5 1L3.5 12L4.5 12Z" fill="#808080"/>
+        </svg>    
+    </div>
+</div>
+                            
+                            <div class="net__line">
+                                <div class="net__line_svg one">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="9" height="9" fill="#008CFF"/>
+                                            <rect x="0.5" y="0.5" width="9" height="9" stroke="#008CFF"/>
+                                            <rect x="0.5" y="14.5" width="9" height="9" fill="#008CFF"/>
+                                            <rect x="0.5" y="14.5" width="9" height="9" stroke="#008CFF"/>
+                                            <rect x="14.5" y="0.5" width="9" height="9" fill="#008CFF"/>
+                                            <rect x="14.5" y="0.5" width="9" height="9" stroke="#008CFF"/>
+                                            <rect x="14.5" y="14.5" width="9" height="9" fill="#008CFF"/>
+                                            <rect x="14.5" y="14.5" width="9" height="9" stroke="#008CFF"/>
+                                        </svg>     
+                                </div>
+                                <div class="net__line_svg two">
+                                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="4" fill="#CFCFCF"/>
+                                            <rect width="24" height="4" transform="translate(0 8)" fill="#CFCFCF"/>
+                                            <rect width="24" height="4" transform="translate(0 16)" fill="#CFCFCF"/>
+                                        </svg>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="school__cards_body">
+                            <div class="school__cards_body_text">
+                                <p>По Вашему запросу ничего не найдено</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/personal_area/citySelect/citySelect.js"></script>
+<script src="js/page_school.js"></script>
+<script src="js/personal_area/citySelect/citySelect.js"></script>
+<script src="js/direction.js"></script>
+</main>
+<footer>
+    <div class="footer__container">
+        <div class="footer__row_one">
+            <div class="container">
+                <div class="footer__content_one">
+                    <div class="logo__svg">
+                        <a href="">
+                            <svg width="242" height="40" viewBox="0 0 242 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.4732 20.7941C20.9892 20.7941 27.1386 26.8907 27.1386 34.3429V39.7708H-0.191895V34.3429C-0.191895 26.891 5.95737 20.7941 13.4732 20.7941V20.7941ZM17.8931 9.55373L11.2747 13.3423V5.76517L17.8931 9.55383V9.55373ZM13.4732 0.150391C18.7113 0.150391 22.9573 4.36038 22.9573 9.55373C22.9573 14.7471 18.7112 18.9569 13.4732 18.9569C8.23538 18.9569 3.98937 14.747 3.98937 9.55373C3.98937 4.36027 8.23549 0.150391 13.4732 0.150391Z"
+                                    fill="#008CFF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M43.5801 20.7948C51.0961 20.7948 57.2456 26.8914 57.2456 34.3436V39.7715H29.915V34.3436C29.915 26.8918 36.0643 20.7948 43.5801 20.7948V20.7948ZM48.3703 11.2141C47.6785 13.1761 45.796 14.5842 43.5808 14.5842C41.3653 14.5842 39.4827 13.1762 38.7909 11.2141H48.3702H48.3703ZM43.5808 0.151367C48.8189 0.151367 53.0647 4.36083 53.0647 9.55439C53.0647 14.7477 48.8188 18.9575 43.5808 18.9575C38.3429 18.9575 34.0965 14.7476 34.0965 9.55439C34.0965 4.36073 38.343 0.151367 43.5808 0.151367V0.151367Z"
+                                    fill="#FF0000" />
+                                <path
+                                    d="M74.6724 18.784C76.0305 19.8929 77.5078 20.7246 79.1059 21.3188C81.3427 22.1107 83.3799 22.3878 85.7762 22.3878C88.3325 22.3878 91.0088 22.0315 93.1259 20.2891C94.8433 18.9028 95.4423 17.2 95.4423 14.9826C95.4423 14.0317 95.3223 13.0814 94.5636 12.0913C94.1241 11.4974 93.4852 10.9033 92.5665 10.4675C94.1641 9.83404 94.8033 8.28955 94.8033 6.74496C94.8033 5.67554 94.4836 3.57681 92.1273 1.95304C90.0902 0.685471 87.454 0.448242 85.7364 0.448242C83.5398 0.448242 81.6222 0.76506 79.9047 1.35879C78.2672 1.95304 76.6693 2.78482 75.3513 3.73516L77.8277 7.02188C78.8262 6.26969 79.9446 5.63627 81.183 5.20068C82.4213 4.7649 83.8192 4.52715 85.3768 4.52715C86.8546 4.52715 87.8933 4.7252 88.6921 5.04212C89.1315 5.23976 90.25 5.63627 90.25 6.82415C90.25 7.7749 89.571 8.13078 89.0917 8.32914C88.4926 8.60626 87.6933 8.68524 85.8965 8.68524H82.661V12.7646H85.297C87.6932 12.7646 88.9718 12.8834 89.9306 13.3982C90.6892 13.834 91.0887 14.2696 91.0887 15.1801C91.0887 15.9724 90.7693 17.0019 89.4912 17.675C88.5325 18.19 87.0547 18.3882 85.8162 18.3882C84.3785 18.3882 82.7007 18.1505 81.063 17.5564C79.3056 16.9227 78.0273 16.0514 77.1089 15.2595L74.6724 18.784ZM146.983 39.0633C147.322 39.2953 147.756 39.5289 148.165 39.6668C148.819 39.8874 149.534 39.9106 149.768 39.9106C150.318 39.9106 150.966 39.8558 151.512 39.4463C151.924 39.1378 152.121 38.7267 152.121 38.2161C152.121 37.9725 152.078 37.7719 151.934 37.5546C151.81 37.3669 151.618 37.2298 151.43 37.1486C151.864 36.9281 151.899 36.4638 151.899 36.2897C151.899 35.9183 151.758 35.4882 151.29 35.1757C150.787 34.8396 150.085 34.781 149.64 34.781C149.324 34.781 148.782 34.8093 148.235 35.0015C147.894 35.1215 147.474 35.3264 147.135 35.5585L147.685 36.5102C147.954 36.3246 148.235 36.1839 148.528 36.0809C148.89 35.953 149.16 35.9183 149.534 35.9183C149.909 35.9183 150.12 35.9676 150.272 36.0229C150.563 36.1286 150.623 36.3013 150.623 36.4289C150.623 36.5334 150.562 36.634 150.389 36.719C150.328 36.7488 150.188 36.7771 149.827 36.7771H148.844V37.7634H149.792C150.155 37.7634 150.367 37.7736 150.541 37.8331C150.635 37.8651 150.857 37.9492 150.857 38.1931C150.857 38.3438 150.752 38.533 150.517 38.634C150.297 38.729 149.967 38.7616 149.686 38.7616C149.324 38.7616 149.005 38.7221 148.598 38.5875C148.233 38.4667 147.931 38.3204 147.615 38.077L146.983 39.0633ZM200.759 39.7711H201.964V34.8969H200.759V36.5796H198.195V34.8969H196.99V39.7711H198.195V37.7404H200.759V39.7711ZM79.4127 39.7711H80.5715V34.8969H79.6585L77.9495 37.3458L76.2642 34.8969H75.3513V39.7711H76.51V37.16L77.9495 39.0981L79.4127 37.16V39.7711ZM84.407 36.6379L84.9339 37.7288H83.8804L84.407 36.6379ZM85.9756 39.7711H87.31L84.7817 34.8969H84.0325L81.516 39.7711H82.8385L83.3772 38.7151H85.4371L85.9756 39.7711ZM89.425 36.8816V35.9882H91.5553C91.6605 35.9882 91.8477 35.9996 91.9767 36.0809C92.1173 36.1738 92.1289 36.3246 92.1289 36.4289C92.1289 36.5334 92.1054 36.6726 91.9767 36.7771C91.883 36.8584 91.7192 36.8816 91.5786 36.8816H89.425ZM88.2079 34.897V39.7712H89.425V37.9726H91.5904C92 37.9726 92.5034 37.9609 92.9363 37.5316C93.1355 37.3344 93.3695 36.986 93.3695 36.3941C93.3695 36.081 93.3108 35.6632 92.9715 35.3381C92.8192 35.2107 92.4566 34.8971 91.6724 34.8971H88.2077L88.2079 34.897ZM98.2587 39.7712H99.6749L97.4275 36.7928L99.6982 34.8971H98.0597L95.9061 36.6999V34.8971H94.7004V39.7713H95.9061V38.0732L96.5497 37.5259L98.2587 39.7713V39.7712ZM100.619 39.7712H105.454V38.6688H101.825V37.7635H104.084V36.7191H101.825V35.9883H105.266V34.8971H100.619V39.7713V39.7712ZM109.523 36.0229H111.384V34.897H106.457V36.0229H108.317V39.7712H109.523V36.0229H109.523ZM116.18 39.7712H117.397V34.897H112.516V39.7712H113.733V36.0575H116.18V39.7712H116.18ZM122.415 39.7712H123.772L121.396 34.897H120.659L118.283 39.7712H119.641L121.022 36.7191L122.415 39.7712ZM124.658 39.7712H129.492V38.6688H125.864V37.7635H128.123V36.7191H125.864V35.9883H129.305V34.8971H124.658V39.7713V39.7712ZM134.007 32.9009C133.995 33.0752 133.925 33.2725 133.796 33.3999C133.62 33.5509 133.304 33.5509 133.129 33.5509C132.953 33.5509 132.637 33.5509 132.462 33.3999C132.333 33.2725 132.263 33.0752 132.251 32.9009H131.397C131.397 33.2261 131.478 33.7135 131.818 34.0383C132.181 34.3981 132.661 34.433 133.129 34.433C133.597 34.433 134.077 34.3981 134.44 34.0383C134.779 33.7135 134.861 33.2261 134.861 32.9009H134.007ZM131.678 39.7712L134.182 36.8817V39.7712H135.353V34.897H134.51L132.005 37.7868V34.897H130.835V39.7712H131.678ZM141.095 37.9377C140.943 38.1349 140.709 38.3913 140.44 38.5296C140.077 38.7158 139.69 38.7502 139.468 38.7502C138.918 38.7502 138.474 38.6102 138.181 38.3439C137.912 38.0998 137.747 37.7521 137.747 37.346C137.747 36.986 137.874 36.6587 138.122 36.3941C138.506 35.986 139.035 35.93 139.445 35.93C139.714 35.93 140.076 35.9558 140.393 36.0926C140.532 36.1526 140.791 36.2898 141.025 36.5684L141.996 35.8953C141.774 35.6167 141.478 35.3447 141.025 35.1177C140.506 34.8576 140.042 34.7811 139.491 34.7811C138.742 34.7811 137.909 34.9305 137.209 35.6399C136.845 36.0093 136.507 36.5684 136.507 37.346C136.507 38.0422 136.764 38.6694 137.174 39.0868C137.63 39.5511 138.391 39.9107 139.433 39.9107C139.597 39.9107 140.311 39.8994 140.92 39.6089C141.306 39.4241 141.739 39.075 142.066 38.5994L141.095 37.9377ZM205.526 36.638L206.053 37.7289H204.999L205.526 36.638ZM207.095 39.7712H208.429L205.901 34.897H205.151L202.635 39.7712H203.958L204.496 38.7152H206.556L207.095 39.7712ZM210.329 38.6688V37.7173H212.084C212.4 37.7173 212.507 37.7563 212.564 37.7869C212.737 37.8793 212.775 38.0304 212.775 38.1698C212.775 38.3904 212.697 38.5042 212.599 38.576C212.466 38.674 212.279 38.6688 212.131 38.6688H210.329ZM210.329 36.6727V35.9416H211.955C212.084 35.9416 212.204 35.9431 212.307 35.9997C212.41 36.0567 212.459 36.1544 212.459 36.2841C212.459 36.4601 212.367 36.561 212.33 36.5916C212.23 36.6747 212.08 36.6727 211.979 36.6727H210.329ZM209.111 34.8971V39.7713H212.213C212.576 39.7713 213.116 39.757 213.536 39.4233C213.942 39.0999 214.016 38.6574 214.016 38.2978C214.016 38.0305 213.965 37.7975 213.793 37.5548C213.606 37.2913 213.372 37.1602 213.243 37.1022C213.629 36.8238 213.7 36.4138 213.7 36.141C213.7 35.6866 213.495 35.3525 213.231 35.1643C212.867 34.9041 212.407 34.8972 212.073 34.8972H209.111V34.8971ZM216.699 37.7173H218.479C218.607 37.7173 218.762 37.7198 218.888 37.81C218.968 37.8662 219.04 37.9726 219.04 38.1698C219.04 38.3321 219.001 38.4484 218.923 38.5296C218.795 38.6643 218.626 38.6688 218.502 38.6688H216.699V37.7173ZM216.699 36.6146V34.8971H215.482V39.7713H218.479C218.888 39.7713 219.429 39.7108 219.848 39.3073C220.22 38.9495 220.281 38.5297 220.281 38.1699C220.281 37.8101 220.206 37.3584 219.872 37.0328C219.473 36.6435 218.872 36.6147 218.619 36.6147H216.699V36.6146ZM220.831 39.7828H222.049V34.897H220.831V39.7828ZM227.331 39.7712H228.747L226.5 36.7928L228.77 34.8971H227.132L224.978 36.6999V34.8971H223.773V39.7713H224.978V38.0732L225.622 37.5259L227.331 39.7713V39.7712ZM231.888 35.8721C232.976 35.8721 233.62 36.5567 233.62 37.3225C233.62 38.1118 233 38.7965 231.888 38.7965C230.799 38.7965 230.167 38.1232 230.167 37.3225C230.167 36.5451 230.799 35.8721 231.888 35.8721ZM231.888 39.9107C233.632 39.9107 234.849 38.808 234.849 37.3344C234.849 35.8488 233.632 34.7811 231.888 34.7811C230.155 34.7811 228.938 35.8604 228.938 37.3344C228.938 38.7851 230.155 39.9107 231.888 39.9107ZM237.346 38.6688V37.7173H239.101C239.417 37.7173 239.524 37.7563 239.581 37.7869C239.754 37.8793 239.792 38.0304 239.792 38.1698C239.792 38.3904 239.713 38.5042 239.616 38.576C239.483 38.674 239.296 38.6688 239.148 38.6688H237.346ZM237.346 36.6727V35.9416H238.972C239.101 35.9416 239.221 35.9431 239.324 35.9997C239.427 36.0567 239.476 36.1544 239.476 36.2841C239.476 36.4601 239.384 36.561 239.347 36.5916C239.247 36.6747 239.097 36.6727 238.996 36.6727H237.346ZM236.128 34.8971V39.7713H239.23C239.593 39.7713 240.133 39.757 240.553 39.4233C240.959 39.0999 241.032 38.6574 241.032 38.2978C241.032 38.0305 240.982 37.7975 240.81 37.5548C240.623 37.2913 240.389 37.1602 240.26 37.1022C240.646 36.8238 240.716 36.4138 240.716 36.141C240.716 35.6866 240.512 35.3525 240.248 35.1643C239.884 34.9041 239.424 34.8972 239.09 34.8972H236.128V34.8971ZM157.415 39.7713H158.621V34.8971H157.415V36.5798H154.852V34.8971H153.646V39.7713H154.852V37.7406H157.415V39.7713ZM162.183 36.6381L162.709 37.729H161.656L162.183 36.6381ZM163.751 39.7713H165.085L162.557 34.8971H161.808L159.292 39.7713H160.614L161.153 38.7153H163.213L163.751 39.7713ZM169.525 39.7713H170.731V34.8971H169.525V36.5798H166.962V34.8971H165.756V39.7713H166.962V37.7406H169.525V39.7713ZM173.274 39.7713L175.779 36.8818V39.7713H176.949V34.8971H176.107L173.602 37.7869V34.8971H172.431V39.7713H173.274ZM181.834 32.901C181.822 33.0753 181.756 33.2783 181.623 33.4C181.453 33.5556 181.131 33.551 180.956 33.551C180.78 33.551 180.459 33.5556 180.289 33.4C180.155 33.2783 180.09 33.0753 180.078 32.901H179.224C179.224 33.2262 179.309 33.711 179.645 34.0384C180.01 34.3944 180.488 34.4331 180.956 34.4331C181.424 34.4331 181.901 34.3944 182.267 34.0384C182.602 33.711 182.688 33.2262 182.688 32.901H181.834ZM179.505 39.7713L182.009 36.8818V39.7713H183.18V34.8971H182.337L179.832 37.7869V34.8971H178.662V39.7713H179.505ZM188.723 39.7713L191.227 36.8818V39.7713H192.398V34.8971H191.555L189.05 37.7869V34.8971H187.88V39.7713H188.723ZM113.736 21.8734H117.97V0.884032H113.736V8.4875H104.11V0.884032H99.8759V21.8734H104.11V12.4476H113.736V21.8734ZM131.63 7.06219L134.466 12.6855H128.834L131.63 7.06219H131.63ZM139.06 21.8734H143.693L133.228 0.884032H130.073L119.687 21.8734H124.321L126.837 16.6853H136.463L139.06 21.8734ZM149.644 18.0317V12.6062H158.232C159.071 12.6062 160.189 12.8041 160.788 13.3191C160.948 13.438 161.547 13.9923 161.547 15.2199C161.547 16.0118 161.228 16.9625 160.628 17.4375C159.95 18.0315 158.831 18.0315 157.912 18.0315H149.644V18.0317ZM149.644 8.76493V4.7253H157.433H157.753C158.232 4.7253 158.951 4.84407 159.43 5.08192C160.189 5.5174 160.229 6.19061 160.229 6.6264C160.229 7.69541 159.75 8.17079 159.43 8.36873C158.951 8.68534 158.072 8.76483 157.433 8.76483H149.644V8.76493ZM145.41 0.884032V21.8734H158.392C160.269 21.8734 162.346 21.6753 164.063 19.933C164.982 19.0219 165.861 17.5962 165.861 15.339C165.861 14.2298 165.661 13.24 165.062 12.1705C164.303 10.9431 163.464 10.4282 162.706 10.1116C163.225 9.67578 164.463 8.68554 164.463 6.15102C164.463 5.20088 164.263 3.81445 163.105 2.66605C161.507 1.08198 158.951 0.884032 157.034 0.884032H145.41ZM174.488 17.9527V12.5271H181.678C182.437 12.5271 183.356 12.5664 184.035 13.2004C184.674 13.7945 184.794 14.6261 184.794 15.2597C184.794 15.7743 184.714 16.7645 183.915 17.3983C183.276 17.9131 182.437 17.9526 181.678 17.9526H174.488V17.9527ZM174.488 8.52739V0.884133H170.295V21.8735H181.519C183.316 21.8735 185.393 21.6359 186.991 20.0913C188.069 19.1015 188.948 17.4378 188.948 15.0222C188.948 13.6359 188.588 12.2104 187.43 10.8243C185.713 8.8839 183.276 8.52739 180.041 8.52739H174.488ZM190.985 21.8735H195.219V0.884133H190.985V21.8735ZM216.109 21.8735H221.221L211.675 8.72524L220.662 0.884133H215.11L204.925 9.55661V0.884133H200.731V21.8735H204.925V14.547L208.56 11.4977L216.109 21.8736V21.8735ZM236.839 8.24996V21.8735H241.033V0.884133H238.117L227.372 14.5074V0.884133H223.178V21.8735H226.054L236.839 8.24996Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- <div class="footer__content_column_container">
+                        
+                    </div> -->
+                    <div class="footer__content_column_rew">
+                        <a class="black__link" href="#">
+                            Политика конфиденциальности
+                        </a>
+                        <a class="black__link" href="#">
+                            О проекте
+                        </a>
+                        <a class="black__link" href="#">
+                            Правила сайта
+                        </a>
+                        <a class="black__link" href="#">
+                            Помощь
+                        </a>
+                    </div>
+                    <div class="footer__content_column">
+                        <a class="black__link" href="#">
+                            Каталог курсов
+                        </a>
+                        <a class="black__link" href="#">
+                            Авторам курсов
+                        </a>
+                        <a class="black__link" href="#">
+                            Учебным центрам
+                        </a>
+                    </div>
+                    <!-- <div class="footer__link">
+                        <a class="black__link" href="#">
+                            Направления
+                        </a>
+                        <a class="black__link" href="#">
+                            Экспертам
+                        </a>
+                        <a class="black__link" href="#">
+                            Учебным центрам
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer__row_two">
+            <div class="container">
+                <div class="footer__content_two">
+                    <div>
+                        <p>© 2022 «Знавыки». Все права защищены</p>
+                    </div>
+                    <!-- <div class="footer__links">
+                        <a class="grey__link" href="#">Правила сайта</a>
+                        <a class="grey__link" href="#">О проекте</a>
+                        <a class="grey__link" href="#">Политика конфиденциальности</a>
+                    </div> -->
+                    <div>
+                        <a class="grey__link" href="#" target="_blank">
+                            Разработка сайта — <strong>Вебпространство</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<<<<<<< HEAD
+<script src="js/libs/swiper.min.js" type="text/javascript"></script>
+=======
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/mobil_menu.js"></script>
+>>>>>>> dbbccfc791ed7da8cf5987bcbb2b72c4057c7bbb
+</body>
+</html>

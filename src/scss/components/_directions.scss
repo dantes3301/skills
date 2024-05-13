@@ -1,0 +1,52 @@
+.directions{
+    display: flex;
+    flex-wrap: wrap;
+}
+.direction{
+    display: flex;
+    padding: rem(4px) rem(12px);
+    width: max-content; 
+    border-radius: 50px;
+    margin: 0 rem(8px) rem(8px) 0;
+    & div {
+        display: flex;
+        align-items: center;
+    }
+    & p {
+        font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+    }
+}
+.direction.design{
+    background: rgba(0, 140, 255, 0.1);   
+    & p{
+        color: $blue;
+    }
+}
+.direction.analytics{
+    background: rgba(254, 28, 28, 0.1);
+    & p{
+        color: #FE1C1C;
+    }
+}
+.direction.skills{
+    background: rgba(0, 146, 41, 0.1);
+    & .directions__svg{
+        margin: 0 0 0 rem(12px);
+    }
+    & p{
+        color: #009229;
+    }
+}
+.direction.analitic{
+    background: rgba(177, 103, 187, 0.1);
+    & p{
+        color: #B167BB;
+    }
+}
+
+.directions__svg{
+    margin: rem(1px) 0 0 rem(6px);
+    cursor: pointer;
+}

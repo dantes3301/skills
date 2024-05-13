@@ -1,0 +1,47 @@
+@@include('components/_header.html', {title: 'Регистрация'})
+<div class="body registration">
+    <div class="container">
+        <div class="body__registration_container">
+            <form>
+                <div class="form__border">
+                    <div class="header__text">
+                        <div class="form__header">
+                            <h1>Регистрация</h1>
+                        </div>
+                        <div class="form__step">
+                            <p>Шаг 1 из 3</p>
+                        </div>
+                    </div>
+                    <div class="form__input">
+                        <div class="inp__container">
+                            <input type="text"  minlength="2"  class="inp name" placeholder="Имя*" required>
+                        </div>
+                        <div class="inp__container">
+                            <input type="text"  minlength="2"  class="inp name" placeholder="Фамилия*" required>
+                        </div>
+                        <div class="inp__container">
+                            <input type="email"   class="inp email" placeholder="Электронная почта*" required>
+                        </div>
+                    </div>
+                    <div class="btn__container">
+                        <button class="btn blue__background">Продолжить</button>
+                    </div>
+                    <div class="personal__data">
+                        <p>Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласие на <a class="blue__link" href="#">
+                                обработку персональных данных.</a></p>
+                    </div>
+                </div>
+            </form>
+            <div class="registration__text_link">
+                <div class="account__text">
+                    <p>Уже есть аккаунт?</p>
+                </div>
+                <nav class="account__link">
+                    <a class="blue__link" href="#"> Войти</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/input.js"></script>
+@@include('components/_footer.html')

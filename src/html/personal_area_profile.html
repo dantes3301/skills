@@ -1,0 +1,197 @@
+@@include('components/_header_auth.html', {title: 'Личный кабинет'})
+<div class="breadcrumbs__container">
+  <div class="container">
+    <nav>
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item">
+          <a href="#" class="grey__link">Главная</a>
+        </li>
+        <li class="breadcrumb-item"><p>Личный кабинет</p></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="body page__personal-profile">
+  <div class="container">
+    <div class="personal-profile__container">
+      @@include('components/_page_personal_aside.html')
+      <div class="personal-profile__content">
+        <div class="content__profile-info">
+          <div class="info__header">
+            <span>Настройки профиля</span>
+          </div>
+          <div id="profile-setting-form" class="info__content">
+            @@include('components/upload-photo/_upload-photo.html')
+            <div class="info-content__personal-settings">
+              <div class="personal-settings__input-container">
+                <label for="name">Имя*</label>
+                <input
+                  id="profile-setting-name"
+                  class="inp"
+                  type="text"
+                  minlength="1"
+                  placeholder="Ваше Имя"
+                  required
+                />
+              </div>
+              <div class="personal-settings__input-container">
+                <label for="profile-setting-secondname">Фамилия</label>
+                <input
+                  id="profile-setting-secondname"
+                  class="inp"
+                  type="text"
+                  placeholder="Ваша Фамилия"
+                />
+              </div>
+              <div class="personal-settings__input-container">
+                <label for="datebirth">Дата рождения</label>
+                <div class="input-date-birth__container">
+                  <div id="select-day-birth" class="custom-select">
+                    <div id="select-day-birth__btn" class="custom-select__btn">
+                      <span>День</span>
+                      <svg
+                        width="9"
+                        height="6"
+                        viewBox="0 0 9 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 6L8.39711 0H0.602886L4.5 6Z"
+                          fill="#808080"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      id="select-day-birth__content"
+                      class="custom-select__content"
+                    >
+                      <ul id="select-day-birth__options" class="options"></ul>
+                    </div>
+                  </div>
+                  <input id="profile-setting-day-birth" type="text" hidden />
+                  <div id="select-month-birth" class="custom-select">
+                    <div id="select-month-birth__btn" class="custom-select__btn">
+                      <span>Месяц</span>
+                      <svg
+                        width="9"
+                        height="6"
+                        viewBox="0 0 9 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 6L8.39711 0H0.602886L4.5 6Z"
+                          fill="#808080"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      id="select-month-birth__content"
+                      class="custom-select__content"
+                    >
+                      <ul id="select-month-birth__options" class="options"></ul>
+                    </div>
+                  </div>
+                  <input id="profile-setting-month-birth" type="text" hidden />
+                  <div id="select-year-birth" class="custom-select">
+                    <div id="select-year-birth__btn" class="custom-select__btn">
+                      <span>Год</span>
+                      <svg
+                        width="9"
+                        height="6"
+                        viewBox="0 0 9 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 6L8.39711 0H0.602886L4.5 6Z"
+                          fill="#808080"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      id="select-year-birth__content"
+                      class="custom-select__content"
+                    >
+                      <ul id="select-year-birth__options" class="options"></ul>
+                    </div>
+                  </div>
+                  <input id="profile-setting-year-birth" type="text" hidden />
+                </div>
+              </div>
+              <div class="personal-settings__input-container">
+                <label for="city">Город</label>
+                <div id="select-city" class="custom-select">
+                  <div id="select-city__btn" class="custom-select__btn">
+                    <span>Выберите</span>
+                    <svg
+                      width="9"
+                      height="6"
+                      viewBox="0 0 9 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.5 6L8.39711 0H0.602886L4.5 6Z"
+                        fill="#808080"
+                      />
+                    </svg>
+                  </div>
+                  <div id="select-city__content" class="custom-select__content">
+                    <ul id="select-city__options" class="options"></ul>
+                  </div>
+                </div>
+                <input id="profile-settings-city" type="text" hidden />
+              </div>
+              <div class="personal-settings__input-container">
+                <label for="#setting-profile-about">О себе</label>
+                <textarea
+                  id="setting-profile-about"
+                  placeholder="Расскажите о себе, своем опыте и увлечениях"
+                ></textarea>
+              </div>
+              <div class="personal-settings__input-container">
+                <label for="email">Электронная почта*</label>
+                <input
+                  id="profile-setting-email"
+                  class="inp"
+                  type="email"
+                  minlength="6"
+                  placeholder="name@domen.ru"
+                  required
+                />
+              </div>
+              <div class="personal-settings__input-container">
+                <label for="phone">Телефон</label>
+                <input
+                  id="profile-setting-phone"
+                  class="inp"
+                  type="text"
+                  minlength="17"
+                  placeholder="+7"
+                />
+              </div>
+              <div class="personal-settings__input-container">
+                <label>Пароль</label>
+                <a href="#" class="btn btn-outline-blue">Сменить пароль</a>
+              </div>
+            </div>
+            <div class="info-content__footer">
+              <button id="profile-setting-btn" type="submit" class="btn btn-blue">Сохранить изменения</button>
+              <button type="submit" class="btn btn-outline-blue">Отменить изменения</button>
+            </div>
+          </d>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/personal_area/citySelect/citySelect.js"></script>
+<script src="js/personal_area/dateSelect/dateOfBirthDay.js"></script>
+<script src="js/personal_area/dateSelect/dateOfBirthMonth.js"></script>
+<script src="js/personal_area/dateSelect/dateOfBirthYear.js"></script>
+<script src="js/personal_area/formMasks/phoneMask.js"></script>
+<script src="js/personal_area/validate/profile.js"></script>
+
+@@include('components/_footer.html')

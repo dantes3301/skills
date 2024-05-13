@@ -1,0 +1,1 @@
+"use strict";var checkboxInputs=document.querySelectorAll(".checkbox");checkboxInputs.forEach(function(c){c.addEventListener("click",function(e){console.log(1),c.classList.toggle("active"),console.log(c.querySelector("input")),c.querySelector("input").checked=!c.querySelector("input").checked})});

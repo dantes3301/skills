@@ -1,0 +1,28 @@
+<div class="upload__container">
+  <span class="avatar-header__mobile">Ваша фотография</span>
+  <div class="info-content__avatar-load">
+    <div class="avatar-load__img-container">
+      @@include('./_dragAvatar.html')
+    </div>
+    <div class="avatar-load__actions">
+      <div class="actions__text">
+        <p>Формат: jpg, png, bmp.</p>
+        <p>Максимальный размер файла: 12Mb.</p>
+      </div>
+      <div class="actions__btns">
+        <label class="btn btn-outline-blue">
+          <input
+            type="file"
+            name="file"
+            id="avatar_upload"
+            accept="image/jpeg,image/png,image/bmp"
+            hidden
+          />
+          Загрузить
+        </label>
+        <a class="btn btn-outline-dark" href="#">Удалить</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./js/personal_area/uploadPhoto/upload.js" type="text/javascript"></script>

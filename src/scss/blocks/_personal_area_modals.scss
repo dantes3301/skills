@@ -1,0 +1,39 @@
+.body.page__personal-modals {
+  margin: rem(60px) 0 0 0;
+  @include tablet {
+    margin: 0 0 rem(45px) 0;
+  }
+}
+.page__personal-modals {
+  .container {
+    @include mobile {
+      padding: 0 0 0 0;
+    }
+  }
+}
+.personal-modals__container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+  .personal-docs__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include tablet_small {
+      grid-template-columns: 1fr;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

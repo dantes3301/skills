@@ -1,0 +1,29 @@
+@@include('components/_header_auth.html', {title: 'Личный кабинет'})
+<div class="breadcrumbs__container">
+  <div class="container">
+    <nav>
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item">
+          <a href="#" class="grey__link">Главная</a>
+        </li>
+        <li class="breadcrumb-item"><p>Личный кабинет</p></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="body page__personal-docs">
+  <div class="container">
+    <div class="personal-docs__container">
+      @@include('components/_page_personal_aside.html')
+      <div class="personal-docs__content">
+        <div class="content__docs-info">
+          <div class="info__header">
+            <span>Документы</span>
+          </div>
+        </div>
+        <div class="docs-list__empty">В данном разделе нет документов</div>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('components/_footer.html')

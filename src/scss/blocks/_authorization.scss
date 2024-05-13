@@ -1,0 +1,131 @@
+// .boby__authtorization {
+//     margin: rem(96px) 0 rem(170px) 0;
+//     @include mobile_middle {
+//         margin-bottom: 0;
+//     }
+// }
+
+.form__border {
+    margin: auto;
+    max-width: rem(520px);
+    width: 100%;
+    height: max-content;
+    border: rem(1px) solid #C5C5C5;
+    border-radius: rem(20px);
+    padding: rem(28px) rem(36px);
+    background: #FFFFFF;
+    @include tablet {
+        margin: auto;
+    }
+
+    @include mobile_middle {
+        max-width: none;
+        width: 100%;
+        min-width: 1px;
+        padding: rem(28px) rem(24px);
+    }
+}
+
+.form__header {
+    & h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(32px);
+
+        @include mobile_middle {
+            font-size: 20px;
+        }
+    }
+}
+
+.inp__container {
+    margin-bottom: 16px;
+}
+.inp__container.password{
+    position: relative;
+}
+.password__btn{
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 22px;
+}
+.password__svg_two.active{
+    display: none;
+}
+.password__svg_one.active{
+    display: none;
+}
+.form__btn_link {
+    padding: 8px 0 8px 0;
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: column;
+        padding: 8px 0 0;
+    }
+
+    & nav {
+        margin-left: 36px;
+
+        @include tablet {
+            margin: 16px 0 0 0;
+        }
+    }
+
+    & a {
+        text-decoration: none;
+        color: #307EBE;
+    }
+}
+
+.btn__container {
+
+    @include tablet {
+        width: 100%;
+    }
+}
+
+.blue__background {
+    background-color: #008CFF;
+    color: #fff;
+    border: none;
+    transition: 0.5s;
+    &:hover{
+        background-color: $red;
+    }
+}
+
+.account__text_link {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+    }
+}
+
+.account__text {
+    & p {
+        color: #545454;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.account__link {
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+
+    & a {
+        text-decoration: none;
+        color: #307EBE;
+    }
+}

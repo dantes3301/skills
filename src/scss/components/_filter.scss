@@ -1,0 +1,110 @@
+.checkbox.none{
+    display: none;
+}
+.checkbox_all.off{
+    display: block;
+    .page__school_select{
+        & svg{
+            transform: rotate(180deg);
+        }
+    }
+    
+}
+.checkbox_all.off .checkbox.none{
+    display: block;
+}
+.page__school_filter{
+    max-width: rem(305px);
+    width: 100%;
+    padding: rem(25px);
+    margin: rem(-10px) 0 0 rem(30px);
+    border-radius: rem(20px);
+    background: #ffffff;
+    height: max-content;
+    @include tablet{
+        display: none;
+    }
+    & .btn__container{
+        margin: rem(42px) 0 rem(15px) 0;
+    }
+}
+.checkbox{
+    margin: 0 0 rem(12px) 0;
+    position: relative;
+    & .checkbox__label{
+        cursor: pointer;
+        & p{
+            width: 200px;
+            margin: rem(-20px) 0 0 rem(30px);
+            
+        }
+    }
+}
+.filter__header{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    margin: rem(32px) 0 rem(16px) 0;
+}
+.filter__header.top{
+    margin: 0 0 rem(16px) 0;
+}
+.filter__checkbox{
+    margin: rem(18px) 0 0 0;
+}
+.block__show{
+    // display: none;
+    display: flex;
+    z-index: 999;
+    background: $blue;
+    width: rem(140px);
+    height: rem(60px);
+    border-radius: rem(20px);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: rem(-16px);
+    right: rem(-165px);
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        background: #FF0000;
+        & svg{
+           & path{
+            fill: #FF0000;
+           }
+            
+        }
+    }
+    & svg{
+        left: rem(-11px);
+        position: absolute;
+        & path{
+            transition: 0.5s;
+           }
+    }
+    & p{
+        color: $white;
+        text-align: center;
+        position: absolute;
+    }
+}
+.checkbox.off .block__show{
+    display: flex;
+}
+.block__show_none{
+    visibility: hidden;
+}
+// .block__show_none.is-active{
+//     visibility: visible;
+// }
+.page__school_select{
+    cursor: pointer;
+    & svg{
+        margin: 0 0 0 rem(7px);
+    }
+}
+.checkbox__label_inp{
+    position: relative;
+}
+

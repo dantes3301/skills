@@ -1,0 +1,16 @@
+.page__course_direction{
+    margin: rem(64px) 0 0 0;
+    @include tablet{
+        margin: rem(16px) 0 0 0;
+    }
+}
+.page__course_direction_container{
+    display: flex;
+}
+.page__course_direction_text{
+    margin: 0 0 rem(24px) 0;
+    & p{
+        font-size: rem(20px);
+        font-weight: 500;
+    }
+}

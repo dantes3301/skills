@@ -1,0 +1,338 @@
+.body.page__school {
+    margin: rem(48px) 0 0 0;
+    @include tablet{
+        margin: rem(15px) 0 rem(45px) 0;
+    }
+}
+.container {
+}
+.body_page__school_container {
+    & .sorting{
+        @include tablet{
+            display: none;
+        }
+        & div{
+            margin: 0 rem(35px) 0 0;
+        }
+    }
+}
+.page__school_info {
+    display: flex;
+    & .project__header {
+        max-width: (786px);
+        width: 100%;
+    }
+    & .school__estimates {
+        margin: 0 0 rem(32px) 0;
+    }
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.page__school_image{
+    margin: 0 rem(65px) 0 0;
+    & img{
+        border-radius: rem(20px);
+        @include tablet{
+            width: 100%;
+        }
+    }
+    @include tablet{
+        margin: 0 0 0 0;
+    }
+}
+.page_school__estimates_text{
+
+}
+.project__header {
+}
+.school__estimates {
+    @include tablet{
+        flex-wrap: wrap;
+    }
+}
+.page__school_project_text{
+    margin: 0 0 28px 0; 
+    @include tablet{
+        margin: 0 0 16px 0;
+    }
+}
+.text__margin{
+    & p:not(:last-child){
+        margin: 0 0 rem(16px) 0;
+    }
+}
+.school__estimates_svg_one {
+    display: flex;
+    align-items: center;
+}
+.page__school__estimates_num{
+    margin: 0 rem(32px) 0 rem(8px);
+    display: flex;
+    align-items: center;
+    & p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 16px;
+    }
+}
+.school__estimates_svg_three{
+    display: flex;
+    align-items: center;
+}
+.page_school__estimates_text{
+    display: flex;
+    align-items: center;
+    margin: 0 rem(32px) 0 rem(8px);
+    & a{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #828282;
+    }
+}
+.page__school_info{
+    background: #FFFFFF;
+    box-shadow: 5px 15px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: rem(48px);
+    @include tablet{
+        padding: 0 0 0 0;
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 5px 15px 35px rgba(0, 0, 0, 0);
+    }
+}
+.all__course_text{
+    margin: rem(60px) 0 rem(60px) 0;
+    & h2{
+        font-size: rem(40px);
+        font-weight: 500;
+    }
+    @include tablet{
+        margin: rem(60px) 0 rem(15px) 0;
+    }
+}
+.page__school_button{
+    display: flex;
+    margin: rem(120px) 0 0 0;
+    @include tablet{
+        margin: rem(60px) 0 0 0;
+    }
+    & button{
+        border: none;
+        font-size: rem(16px);
+    }
+}
+.btn_page__school{
+    padding: rem(8px) rem(12px);
+    border-radius: rem(8px);
+    width: max-content;
+    background: rgba(0, 140, 255, 0.1);
+    color: $blue;
+    margin: 0 rem(12px) 0 0 ;
+    transition: 0.5s;
+    &.active{
+        background: $blue;
+        color: $white;
+        font-weight: 400;
+    }
+    &:hover{
+        background: $blue;
+        color: $white;
+        font-weight: 400;
+    }
+}
+.sorting__menu_container{
+    display: flex;
+    justify-content: space-between;
+}
+.net__line{
+    display: flex;
+    & div {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 rem(28px);
+    }
+    @include tablet {
+        display: none;
+    }
+    & .one.is-active{
+        & svg{
+            fill: #CFCFCF;
+            & rect{
+                stroke: #CFCFCF;
+            }
+        }
+    }
+    & .two.is-active{
+        & svg{
+            fill: $blue;
+            & rect{
+                fill: $blue;
+            }
+        }
+    }
+}
+.net__line_svg{
+    cursor: pointer;
+}
+
+.school__cards_body{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: rem(35px);
+    margin: rem(40px) 0 0 0;
+    max-width: rem(870px);
+    // height: rem(2104px);
+    width: 100%;
+    padding: rem(30px) rem(35px);
+    @include desktop_base{
+        width: auto;
+    }
+    @include tablet{
+        // flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        padding: 0 0;
+        margin: rem(15px) 0 0 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+.school__cards_body.is-active{
+    display: none;
+}
+
+
+.school__cards_container_menu{
+    max-width: rem(870px);
+    width: 100%;
+    @include tablet{
+        max-width: 100%;
+    }
+    @include mobile{
+        width: 100%;
+    }
+}
+.menu__card_filter{
+    display: flex;
+    // justify-content: center;
+    width: 100%;
+    @include mobile{
+        justify-content: center;
+        // display: none;
+    }
+}
+.checkbox_all.is-active{
+    visibility: hidden;
+}
+
+.page__school_link_blue{
+    color: #008CFF;
+}
+.page__school_select{
+    display: flex;
+    align-items: center;
+    & a{
+        margin: 0 rem(7px) 0 0;
+    }
+}
+.page__school_price_container{
+    display: flex;
+    & p{
+        color: #878787;
+    }
+}
+.page__school_price_container_p{
+    margin: 0 0 rem(5px) 0;
+}
+.page__school_price_container_input{
+    margin: 0 rem(24px) 0 0;
+}
+.page__school_menu_margin{
+    @include tablet{
+        margin: 200px 0 0 0;
+    }
+}
+.page__school_reviews{
+    display: none;
+}
+.page__school_reviews.is-active{
+    display: block;
+}
+.menu__card_filter_header{
+    display: none;
+}
+.menu__card_filter_header.is-active{
+    display: block;
+}
+.page__school_reviews_container {
+    padding: rem(24px);
+    background-color: $white;
+    border-radius: rem(20px);
+    margin:  0 0 rem(32px) 0;
+}
+.page__school_reviews_row {
+    display: flex;
+    margin: 0 0 rem(20px) 0;
+    // align-items: center;
+}
+.page__school_reviews_img {
+    width: rem(82px);
+    height: rem(82px);
+    & img{
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+.page__school_reviews_column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 rem(20px);
+}
+.page__school_reviews_name {
+    margin: 0 0 rem(12px) 0;
+    & p{
+        font-size: rem(20px);
+        font-weight: 700;
+
+    }
+}
+.page__school_reviews_grade {
+    & p{
+        color: #575757;
+        font-size: rem(14px);
+
+    }
+}
+.page__school_review{
+    & p{
+        font-size: rem(16px);
+        line-height: rem(22px);
+    }
+}
+.page__school_reviews {
+    max-width: rem(811px);
+    width: 100%;
+    margin: rem(70px) 0 rem(70px) 0;
+    @include tablet{
+        margin: rem(20px) 0 rem(30px) 0;
+    }
+}
+.btn__container.center{
+    
+    @include tablet{
+        display: flex;
+        justify-content: center;
+    }
+}
+.body_page__school_container{
+    & .block__show{
+        left: -70%;
+        & svg{
+            left: 99%;
+            transform: rotate(180deg);
+        }
+    }
+}

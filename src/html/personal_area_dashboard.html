@@ -1,0 +1,107 @@
+@@include('components/_header_auth.html', {title: 'Личный кабинет'})
+<div class="breadcrumbs__container">
+  <div class="container">
+    <nav>
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item">
+          <a href="#" class="grey__link">Главная</a>
+        </li>
+        <li class="breadcrumb-item"><p>Личный кабинет</p></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="body page__personal-area">
+  <div class="container">
+    <div class="body_page__personal-area-container">
+      @@include('components/_page_personal_aside.html')
+      <div class="page-personal__content">
+        <div class="content__profile-info">
+          <div class="info__header">
+            <span>Профиль</span>
+            <a href="#">
+              Заполнить
+              <img src="images/arrow-right.svg" alt="arrow-icon" />
+            </a>
+          </div>
+          <div class="info__content">
+            <div class="content__desc">
+              <p>
+                <strong>70%</strong>
+              </p>
+              <p>
+                Заполненность<br />
+                профиля
+              </p>
+            </div>
+            <div class="content__graph">
+              <!-- график тут -->
+              <canvas id="doughnutChart" width="140" height="140"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="content__courses-info">
+          <div class="info__header">
+            <span>Мои курсы</span>
+            <a href="#">
+              Учиться
+              <img src="images/arrow-right.svg" alt="arrow-icon" />
+            </a>
+          </div>
+          <div class="info__content">
+            <p>Активные курсы: <strong>18</strong></p>
+            <p>Все курсы: <strong>24</strong></p>
+            <p>Избранные: <strong>3</strong></p>
+          </div>
+        </div>
+        <div class="content__certificate-info">
+          <div class="info__header">
+            <span>Последний полученный сертификат</span>
+            <a href="#">
+              Смотреть все
+              <img src="images/arrow-right.svg" alt="arrow-icon" />
+            </a>
+          </div>
+          <div class="info__content">
+            @@include('components/_page_personal_docs.html')
+          </div>
+        </div>
+        <div class="content__offers-header">Специальные предложения</div>
+        <div class="content__offers-description">
+          @@include('components/_personal_area_course_card.html')
+        </div>
+        <div class="content__container-banner">
+          <div class="content__mobile-app-banner">
+            <img
+              class="mobile-app-banner__img"
+              src="images/mobile_banner.jpg"
+              alt="mobile-banner-img"
+            />
+            <img
+              class="mobile-app-banner__img-mob"
+              src="images/mobile_banner_mob.jpg"
+              alt="mobile-banner-img"
+            />
+            <div class="mobile-app-banner__desc">
+              <span>Мобильное приложение</span>
+              <p>
+                Сервис быстро работает на компьютерах, планшетах и телефонах.
+                Ваши сотрудники смогут учиться в офисе, в пробке, за границей и
+                даже в самолете без доступа в интернет.
+              </p>
+              <div class="mobile-app-banner__btns">
+                <a href="#" target="_blank" class="btn btn-white">AppStore</a>
+                <a href="#" target="_blank" class="btn btn-white">Google Play</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script defer src="./js/libs/chart.min.js" type="text/javascript"></script>
+<script defer src="./js/chart.js"></script>
+<script src="js/heart.js"></script>
+
+@@include('components/_footer.html')

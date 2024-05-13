@@ -1,0 +1,187 @@
+.body.page__personal-profile {
+  margin: rem(60px) 0 0 0;
+  @include tablet {
+    margin: 0 0 rem(45px) 0;
+  }
+}
+.page__personal-profile {
+  .container {
+    @include mobile {
+      padding: 0 0 0 0;
+    }
+  }
+}
+.personal-profile__container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+  .content__profile-info {
+    background-color: $white;
+    border-radius: rem(20px);
+    padding: rem(20px) rem(24px);
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+      padding: rem(20px) rem(15px);
+    }
+    .info__header {
+      display: flex;
+      align-items: center;
+      padding-bottom: rem(24px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      span {
+        font-size: rem(20px);
+        font-weight: 500;
+        line-height: 120%;
+      }
+      @include mobile {
+        padding-bottom: rem(20px);
+      }
+    }
+    .info__content {
+      margin-top: rem(32px);
+      .avatar-header__mobile {
+        display: none;
+        @include mobile {
+          display: block;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 143%;
+        }
+      }
+      .info-content__avatar-load {
+        display: flex;
+        @include mobile {
+          margin-top: rem(12px);
+          flex-direction: column;
+        }
+        .avatar-load__actions {
+          margin-left: 24px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          @include mobile {
+            justify-content: flex-start;
+            margin-top: rem(16px);
+            margin-left: 0;
+          }
+          .actions__text {
+            p {
+              font-size: 14px;
+              color: #666666;
+              line-height: 143%;
+              margin-bottom: 4px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+          .actions__btns {
+            @include mobile {
+              margin-top: rem(16px);
+            }
+            display: flex;
+            .btn-outline-blue,
+            .btn-outline-dark {
+              padding: rem(6px) rem(16px);
+              font-size: 14px;
+              font-weight: 500;
+            }
+            .btn-outline-dark {
+              margin-left: rem(16px);
+            }
+          }
+        }
+      }
+      .info-content__personal-settings {
+        margin-top: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        @include mobile {
+          padding-bottom: 0;
+          border-bottom: 0px;
+        }
+        .personal-settings__input-container {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 32px;
+          @include tablet {
+            width: 100%;
+          }
+          @include mobile {
+            width: 100%;
+          }
+          .custom-select,
+          textarea {
+            margin-top: 12px;
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+          label {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 143%;
+            @include mobile {
+              font-size: 14px;
+            }
+          }
+          input {
+            margin-top: 12px;
+          }
+          .btn {
+            margin-top: 12px;
+            display: block;
+            text-align: center;
+            @include mobile {
+              width: 100%;
+            }
+          }
+        }
+        .input-date-birth__container {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 12px;
+          @include mobile {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+      .info-content__footer {
+        padding: 20px 0;
+        display: flex;
+        justify-content: flex-start;
+        @include mobile {
+          margin-top: 52px;
+          flex-direction: column;
+          padding: 0;
+        }
+        text-align: center;
+        button {
+          &:last-child {
+            margin-left: 12px;
+          }
+          @include tablet {
+            width: unset;
+          }
+          @include mobile {
+            width: 100%;
+            &:last-child {
+              margin-top: 12px;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+    @include mobile {
+      border-radius: 0;
+    }
+  }
+}

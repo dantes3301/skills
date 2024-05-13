@@ -1,0 +1,134 @@
+.footer__container {
+    padding: 20px 0 0 0;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.footer__row_one {
+    border-bottom: 1px solid $lineColor;
+    padding: 25px 0;
+
+    @include tablet {
+        padding: 0;
+        border-bottom: 1px solid rgba(109, 172, 223, 0.3);
+    }
+}
+
+
+.footer__row_two {
+    padding: 20px 0;
+    @include tablet{
+        padding: 12px 0; 
+    }
+}
+
+.footer__content_two {
+    display: flex;
+    justify-content: space-between;
+    & p{
+        text-align: center;
+        font-size: 16px;
+        color: $grey;
+        // line-height: 0px;
+    }
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & div {
+        display: flex;
+        align-items: center;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 rem(12px) 0;
+        }
+        & p{
+            // margin-bottom: rem(12px);
+        }
+        & a {
+            // margin-bottom: rem(12px);
+            text-align: center;
+            font-size: 16px;
+            color: $grey;
+            text-decoration: none;
+        }
+    }
+}
+.footer__links{
+    & a {
+        margin: 0 rem(7.5px);
+        word-wrap: normal;
+    }
+}
+.footer__content_column_container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__content_one {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .logo__svg{
+            max-width: rem(181px);
+            width: 100%;
+            margin: 0 0 rem(18px) 0;
+           & svg{
+            height: rem(30px);
+           }
+        }
+    }
+}
+.footer__content_column_rew{
+    display: flex;
+    flex-direction: column;
+    & a {
+        margin: 0 0 8px 0;
+        font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(24px);
+        @include tablet{
+            text-align: center;
+        }
+    }
+    @include tablet{
+        order: 2;
+    }
+}
+.footer__content_column{
+    display: flex;
+    flex-direction: column;
+    & a {
+        margin: 0 0 8px 0;
+        font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(24px);
+        @include tablet{
+            text-align: center;
+        }
+    }
+}
+.footer__link {
+    @include tablet {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 25px 0 25px 0;
+    }
+
+    & a {
+        margin: 0 0 0 40px;
+        text-decoration: none;
+        font-size: 16px;
+        color: $black;
+
+        @include tablet {
+            margin: 4px auto 4px auto;
+        }
+    }
+}

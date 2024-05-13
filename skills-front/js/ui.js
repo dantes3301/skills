@@ -1,0 +1,1 @@
+"use strict";var reviewsBtn=document.querySelectorAll(".read-more-button");reviewsBtn.forEach(function(t){t.addEventListener("click",function(e){t.closest("div").classList.toggle("active"),t.querySelector("p").textContent="Развернуть отзыв"===t.querySelector("p").textContent?"Свернуть отзыв":"Развернуть отзыв"})});

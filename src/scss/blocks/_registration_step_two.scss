@@ -1,0 +1,11 @@
+.text__password {
+    color: #777777;
+    margin: 0 0 rem(16px) 0;
+
+    @include tablet {
+        margin: 0 0 rem(8px) 0;
+        & p{
+            font-size: rem(14px);
+        }
+    }
+}

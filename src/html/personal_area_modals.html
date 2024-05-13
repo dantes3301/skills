@@ -1,0 +1,32 @@
+@@include('components/_header_auth.html', {title: 'Личный кабинет'})
+<div class="breadcrumbs__container">
+  <div class="container">
+    <nav>
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item">
+          <a href="#" class="grey__link">Главная</a>
+        </li>
+        <li class="breadcrumb-item"><p>Личный кабинет</p></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="body page__personal-modal">
+  <div class="container">
+    <div class="personal-modals__container">
+      @@include('components/_page_personal_aside.html')
+      <div class="personal-docs__content">
+        <a data-modal="modal-certificate" class="btn btn-outline-blue">Сертификат</a>
+        <a data-modal="modal-change-password" class="btn btn-outline-blue">Смена пароля</a>
+        <a data-modal="modal-save-settings" class="btn btn-outline-blue">Сохранение настроек профиля</a>
+        <a data-modal="modal-decline-save" class="btn btn-outline-blue">Отмена внесенных данных</a>
+      </div>
+      @@include('components/modals/_custom_modal_change_password.html')
+      @@include('components/modals/_custom_modal_save_settings.html')
+      @@include('components/modals/_custom_modal_decline_save.html')
+      @@include('components/modals/_custom_modal_certificate.html')
+    </div>
+  </div>
+</div>
+<script src="js/modals.js"></script>
+@@include('components/_footer.html')

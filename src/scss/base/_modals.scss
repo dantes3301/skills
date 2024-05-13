@@ -1,0 +1,191 @@
+.custom-modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  &_active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @include tablet {
+    padding: 20px;
+  }
+  .custom-modal__background {
+    position: absolute;
+    background: #307ebe;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+  }
+  .custom-modal__container {
+    border-radius: rem(20px);
+    padding: rem(24px);
+    background: $white;
+    z-index: 1000;
+    .btn {
+      text-align: center;
+    }
+    @include mobile {
+      padding: rem(20px);
+    }
+    .custom-modal__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      h5 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 120%;
+      }
+      .custom-modal__exit {
+        max-width: 32px;
+        max-height: 32px;
+        min-width: 32px;
+        min-height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: -4px;
+        right: -4px;
+      }
+    }
+    .custom-modal__content {
+      margin-top: rem(32px);
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 125%;
+      }
+    }
+    .custom-modal__footer {
+      margin-top: rem(156px);
+      display: flex;
+      @include mobile {
+        margin-top: rem(32px);
+      }
+    }
+  }
+}
+
+#modal-change-password {
+  .custom-modal__container {
+    max-width: 528px;
+    width: 100%;
+    .form-change-password-modal {
+      margin-top: rem(32px);
+      display: flex;
+      flex-direction: column;
+      .form-modal__inputs-container {
+        padding-bottom: 32px;
+        border-bottom: 1px solid #cccccc;
+        .form-modal__input-control {
+          display: flex;
+          flex-direction: column;
+          margin-top: rem(32px);
+          &:first-child {
+            margin-top: 0;
+          }
+          label {
+            font-size: 14px;
+            line-height: 143%;
+            font-weight: 500;
+          }
+          .label-helper {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 129%;
+            margin-top: 4px;
+          }
+          input {
+            margin-top: 12px;
+            width: 100%;
+          }
+        }
+      }
+      .form-modal__buttons {
+        margin-top: rem(20px);
+        display: flex;
+        align-items: center;
+        @include mobile {
+          flex-direction: column;
+        }
+        .btn {
+          @include mobile {
+            width: 100%;
+          }
+          &:last-child {
+            margin-left: rem(12px);
+            @include mobile {
+              margin-top: rem(12px);
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#modal-save-settings {
+  .custom-modal__container {
+    max-width: 528px;
+    width: 100%;
+    .custom-modal__footer {
+      .btn {
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+#modal-decline-save {
+  .custom-modal__container {
+    max-width: 528px;
+    width: 100%;
+    .custom-modal__footer {
+      @include mobile {
+        flex-direction: column;
+      }
+      .btn {
+        @include mobile {
+          width: 100%;
+        }
+        &:last-child {
+          @include mobile {
+            margin-left: 0;
+            margin-top: rem(12px);
+          }
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}
+#modal-certificate {
+  .custom-modal__container {
+    width: 800px;
+    background: transparent;
+    position: relative;
+    padding: unset;
+    z-index: 1000;
+    .custom-modal__header {
+      z-index: 100;
+      .custom-modal__exit {
+        border-radius: 50%;
+        background-color: $white;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: rem(20px);
+    }
+  }
+}

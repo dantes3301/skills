@@ -1,0 +1,131 @@
+@@include('components/_header.html', {title: 'Каталог школ'})
+<div class="breadcrumbs__container">
+    <div class="container">
+        <nav>
+            <ul class="breadcrumbs">
+                <li class="breadcrumb-item"><a href="#" class="grey__link">Главная</a></li>
+                <li class="breadcrumb-item"><p>Каталог школ</p></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    <div class="body school">
+        <div class="container">
+            <div class="body__school_container">
+                <div class="school__info">
+                    <div class="course_dir_header">
+                        <h1>Каталог школ</h1>
+                    </div>
+                    <div class="course_dir_text">
+                        <p>
+                            Все онлайн-школы и авторы курсов в одном месте. Выбирай школу, смотри курсы, сравнивай, читай честные отзывы                        </p>
+                    </div>
+                    <div class="school__menu">
+                        <div class="school__menu_desktop">
+                            <!-- <div class="school__select">
+                                <div class="school__select_head">
+                                    <div class="school__select_head_text">
+                                        <p>Выбрать направления</p>
+                                    </div>
+                                    <div class="school__select_head_svg">
+                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.63015 4.62919L7.32457 4.62919C7.6727 4.6292 7.95474 4.34716 7.95473 3.99903C7.95473 3.6509 7.67269 3.36886 7.32458 3.36887L4.63001 3.36902L4.63001 0.67461C4.63001 0.326485 4.34797 0.044448 3.99985 0.044448C3.65172 0.044448 3.36969 0.326485 3.36969 0.67461L3.36969 3.36902L0.675273 3.36902C0.327149 3.36902 0.045111 3.65106 0.0451178 3.99918C0.0451112 4.34731 0.327149 4.62935 0.67528 4.62934L3.36969 4.62935L3.36969 7.32375C3.36969 7.67188 3.65172 7.95392 3.99985 7.95391C4.34798 7.95392 4.63002 7.67188 4.63 7.32375L4.63015 4.62919Z" fill="#4A4A4A"/>
+                                            </svg>
+                                    </div>
+                                </div>
+                                <div class="school__select_body">
+                                    <div class="school__select_body_scroll">
+                                        <div class="school__select_item">
+                                            <p>Аналитка</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Финансовая грамоность</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                        <div class="school__select_item">
+                                            <p>Дизайн</p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                              <div class="school_sel_container">
+                                <div class="personal-settings__input-container">
+                                    <div id="select-direction" class="custom-select">
+                                      <div id="select-direction__btn" class="custom-select__btn">
+                                        <span>Направления</span>
+                                        <svg
+                                          width="9"
+                                          height="6"
+                                          viewBox="0 0 9 6"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <path
+                                            d="M4.5 6L8.39711 0H0.602886L4.5 6Z"
+                                            fill="#808080"
+                                          />
+                                        </svg>
+                                      </div>
+                                      <div id="select-direction__content" class="custom-select__content">
+                                        <ul id="select-direction__options" class="options"></ul>
+                                      </div>
+                                    </div>
+                                    <input id="direction-school" type="text" hidden />
+                                  </div>
+                              </div>
+                            @@include("components/_sorting.html")
+                        </div>
+                        @@include("components/_sorting_mobil.html")
+
+<div class="sorting__directions">
+    
+    @@include('components/_directions.html')
+</div>
+                    </div>
+                    <div class="school">
+                        <div class="scholl__column">
+                            @@include('components/_school_directory.html')
+                            @@include('components/_school_directory.html')
+                        </div>
+                    </div>
+                    @@include('components/_page_selection_menu.html')
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/coursesFilterDirectionSh.js"></script>
+    <script src="js/school.js"></script>
+@@include('components/_footer.html')

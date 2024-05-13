@@ -1,0 +1,375 @@
+.body.page__course{
+    margin: rem(60px) 0 rem(10px) 0;
+    @include tablet{
+        margin: 0 0 rem(45px) 0;
+    }
+}
+.page__course_background{
+    background-image: url("../images/page_course.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: rem(355px);
+    min-height: rem(355px);
+    margin: rem(-25px) 0 rem(28px) 0;
+    height: 150%;
+    @include tablet{
+        width: 100%;
+        min-height: rem(209px);
+        max-height: rem(210px);
+        height: 100%;
+        // margin: rem(-30px) 0 0 0;
+        // background-position: center;
+        // background-size: 100% 100%;
+        background-size: auto 100%;
+        background-position: top;
+    }    
+    @include mobile{
+        min-height: rem(109px);
+        max-height: rem(110px);
+        background-size: auto 100%;
+    }
+}
+
+.page__course_background.is-active{
+    display: none;
+}
+.page__course_background_two.is-active{
+    display: block;
+}
+.page__course_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.page__course_btns_container{
+    display: flex;
+    margin: rem(-36px) 0 0 0;
+    & button{
+        border: none;
+        font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+    }
+    @include tablet{
+        margin: rem(30px) 0 0 0;
+        align-items: center;
+        white-space: nowrap;
+    overflow-x: scroll;
+    height: rem(37px);
+    width: 100%;
+    &::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+    }
+    
+}
+.page__course_menu_options{
+    margin: rem(36px) 0 0 0;
+    max-width: rem(855px);
+    width: 100%;
+    @include tablet{
+        max-width: 100%;
+    }
+    & .tab.one{
+        display: none;
+    }
+    & .tab.two{
+        display: none;
+    }
+    & .tab.three{
+        display: none;
+    }
+    & .tab.four{
+        display: none;
+    }
+    & .tab.five{
+        display: none;
+    }
+    & .tab.is-active{
+        display: block;
+    }
+}
+
+.container__rev_two_colm{
+    @include tablet{
+        
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(33px);
+    }
+    @include mobile{
+        display: block;
+    }
+    & .page__school_reviews_container{
+        height: max-content;
+        @include tablet{
+            margin: 0 0 0 0;
+        }
+        @include mobile{
+            margin: 0 0 rem(33px) 0;
+        }
+        &.last{
+            margin: 0 0 0 0;
+            
+        }
+        & .read-more-button{
+            display: none;
+            @include tablet{
+                display: flex;
+            }
+        }
+    }
+    @include tablet{
+        & .read-more-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & svg{
+                margin: rem(12px);
+            }
+          }
+          
+              & .page__school_review{
+                max-height: 91px;
+                overflow: hidden;
+                position: relative;
+                & .bottom{
+                    position: absolute;
+                    bottom: 0;
+                    background: linear-gradient(
+                    to bottom,
+                    rgb(255 217 29 / 0%),
+                    rgb(255, 255, 255) 95%);
+                    width: 100%;
+                    height: 110px;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+              }
+              & .active .page__school_review{
+                max-height: none;
+              }
+              & .active .bottom{
+                opacity: 0;
+                position: absolute;
+              }
+              & .active svg{
+                  transform: rotate(180deg);
+              }  
+    }
+}
+
+.page__course_h_three{
+    margin: 0 0 rem(32px) 0;
+    & h3{
+        font-weight: 500;
+        font-size: rem(32px);
+    }
+    @include tablet{
+        & h3{
+            font-size: rem(22px);
+        }
+    }
+}
+.page__course_option_text{
+    & p{
+        margin: 0 0 rem(16px) 0;
+        font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(22px);
+    }
+    @include tablet{
+        & p{
+            font-size: rem(14px);
+        }
+    }
+}
+// .page__course_reviews{
+//     border-radius: rem(20px);
+//     padding: rem(25px);
+//     background: $white;
+//     margin: 0 0 rem(32px) 0;
+//     @include tablet{
+//         margin: 0 0 rem(20px) 0;
+//     }
+// }
+// .page__course_reviews_row{
+//     margin: 0 0 rem(10px) 0;
+//     display: flex;
+//     align-items: center;
+// }
+// .page__course_img{
+//     margin: 0 rem(18px) 0 0;
+//     & img{
+//         width: rem(32px);
+//         height: rem(32px);
+//         border-radius: 50%;
+//     }
+// }
+// .page__course_reviews_container{
+//     margin: 0 0 rem(87px) 0;
+//     @include tablet{
+//         margin: 0 0 rem(20px) 0;
+//     }
+// }
+.page__course_certificate{
+    & .page__course_certificate_container{
+        width: max-content;
+        cursor: pointer;
+        @include tablet{
+            width: 100%;
+        }
+    }
+    
+    & img{
+        max-width: rem(342px);
+        width: 100%;
+        @include tablet{
+            max-width: 100%;
+        }
+    }
+}
+.page__course_certificate_two{
+    
+    & .page__course_certificate_container_two{
+        display: none;
+        width: max-content;
+        cursor: pointer;
+        @include tablet{
+            width: 100%;
+        }
+    }
+    
+    & img{
+        max-width: rem(342px);
+        width: 100%;
+        @include tablet{
+            width: 100%;
+        }
+    }
+}
+.page__course_certificate_two.is-active{
+    
+    
+    & .page__course_certificate_container_two{
+        cursor:auto;
+        display: block;
+        max-width: rem(800px);
+        max-height: rem(571px);
+        width: 100%;
+        height: 100%;
+        // margin: 0 auto 0 auto;
+        position: fixed;
+        top: 50%; 
+           left: 50%; 
+        //    margin-top: -300px; 
+        //    margin-left: -400px; 
+           margin: rem(-300px) 0 0 rem(-400px);
+
+        z-index: 2;
+        & img{
+            max-width: 100%;
+        }
+        & .close__popup{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: rem(32px);
+            width: 100%;
+            max-height: rem(32px);
+            height: 100%;
+            background: $white;
+            border-radius: 50%;
+            position: absolute;
+            top: 3.5%;
+            left: 94%;
+            z-index: 2;
+            @include tablet{
+                left: 93%;
+            }
+            @include mobile{
+                top: 2%;
+                left: 85%;
+                right: 30px;
+            }
+            
+        }
+        @include tablet{
+            min-width: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            padding: 0 15px 0 15px;
+            margin: rem(-200px) 0 0 0;
+            & img{
+                width: 100%;
+            }
+        }
+    }
+    @include tablet{
+        // top: rem(54px);
+        // left: 0;
+        // right: 0;
+        // padding: 0 15px 0 15px;
+        width: 100%;
+    }
+}
+
+.page__course_menu_options.is-active{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+.btn__container.page__course{
+    width: max-content;
+    cursor: pointer;
+    @include tablet{
+        margin: 0 auto 0 auto;
+    }
+}
+
+.popup__backgruond{
+    display: none;
+    background: #307EBE;
+    opacity: 0.4;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.page__course_menu_options.is-active .popup__backgruond{
+    display: block;
+}
+.banner__container{
+    background: url('../images/page_course_mobile.jpg') repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    max-width: rem(304px);
+    min-width: 300px;
+    width: 100%;
+    max-height: rem(292px);
+    min-height: 300px;
+    height: 100%;
+    border-radius: rem(10px);
+    margin: rem(40px) 0 0 0;
+    @include tablet{
+        display: none;
+    }
+}
+.page__course_filter_container{
+    height: max-content;
+}
+
+
+

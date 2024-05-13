@@ -1,0 +1,1 @@
+"use strict";document.querySelector(".btn.blue__background.popup").onclick=function(){console.log(1),document.querySelectorAll("input").forEach(function(e){(""==e.value||e.value.length+1<=8)&&(e.classList.remove("active"),e.classList.add("is-active"))})};

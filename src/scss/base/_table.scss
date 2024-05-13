@@ -1,0 +1,31 @@
+.custom-table__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  .custom-table__header {
+    display: grid;
+    .table-header__cell {
+      font-size: rem(14px);
+      line-height: 129%;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    padding-bottom: rem(12px);
+    border-bottom: 1px solid #aeaeae;
+    // put your grid template configs in table wrap
+  }
+  .custom-table__body {
+    .table-body__item {
+      display: grid;
+      // put your grid template configs in table wrap
+      padding: rem(16px) 0;
+      border-bottom: 1px solid #c5c5c5;
+      &:last-child {
+        border-bottom: 0;
+      }
+      .table-body__cell {
+        font-size: rem(14px);
+        line-height: 129%;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+"use strict";var swiper=new Swiper(".mySwiper",{slidesPerView:4,spaceBetween:40,autoplay:{delay:2500,disableOnInteraction:!1}}),swiper=new Swiper(".mySwiper_two",{slidesPerView:3,autoplay:{delay:2500,disableOnInteraction:!1}});

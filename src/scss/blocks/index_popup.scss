@@ -1,0 +1,26 @@
+.index__popup_container{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+    outline: none;
+    background: rgba(#307ebe, 0.4);
+    overflow: hidden;
+    padding: 15px;
+    & .expert__close{
+        background: none;
+        border: none;
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        right: 12px;
+        top: 27px;
+    }
+}

@@ -1,0 +1,29 @@
+.reg__text_two {
+    margin: rem(16px) 0 0 0;
+
+    @include tablet {
+        margin: rem(8px) 0 0 0;
+        & p{
+            font-size: 14px;
+        }
+    }
+}
+.reg__text{
+    @include tablet {
+        & p{
+            font-size: 14px;
+        }
+    }
+}
+
+.timer__text{
+    color: #545454;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        
+        & .timer{
+            margin: 0 0 0 rem(10px);
+        }
+}

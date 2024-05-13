@@ -1,0 +1,1 @@
+"use strict";var doughnutCanvas=document.getElementById("doughnutChart"),doughnutData=(Chart.defaults.global.defaultFontSize=18,{datasets:[{data:[70,30],backgroundColor:["#008CFF","rgba(0, 140, 255, 0.12)"]}]}),pieChart=new Chart(doughnutCanvas,{type:"doughnut",data:doughnutData,options:{tooltips:{custom:function(t){t.opacity=0}}}});

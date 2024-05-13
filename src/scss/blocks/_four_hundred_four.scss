@@ -1,0 +1,38 @@
+.body__four_hundred_four{
+    margin: rem(63px) 0 rem(-120px) 0;
+    @include tablet{
+        margin: rem(15px) 0 rem(-20px) 0;
+    }
+    & h1{
+        text-align: center;
+        font-weight: 500;
+        font-size: rem(44px);
+        line-height: rem(54px);
+        @include tablet{
+            font-weight: 500;
+            font-size: rem(24px);
+            line-height: rem(28px);
+        }
+    }
+    & p{
+        text-align: center;
+        font-weight: 400;
+        font-size: rem(20px);
+        line-height: rem(32px);
+        @include tablet{
+            margin: rem(4px) 0 0 0;
+            font-weight: 400;
+            font-size: rem(16px);
+            line-height: rem(22px);
+        }
+    }
+}
+
+.four_hundred_four_img{
+    display: flex;
+    justify-content: center;
+    margin: rem(33px) 0 0 0;
+    & img{
+        width: 100%;
+    }
+}

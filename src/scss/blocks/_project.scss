@@ -1,0 +1,233 @@
+.body.project {
+    margin: rem(48px) 0 0 0;
+    @include tablet{
+        margin: rem(15px) 0 rem(40px) 0;
+    }
+}
+.body__project_container {
+}
+.breadcrumbs__container{
+    margin: rem(7px) 0 0 0;
+    @include tablet{
+        display: none;
+    }
+    & a {
+        font-weight: 400;
+    }
+    & p {
+        text-align: center;
+        font-weight: 400;
+    }
+}
+.breadcrumb > li + li:before {
+    padding: 0px;
+    color: #ccc;
+    content: "/\00a0";
+  }
+  .breadcrumb-item{
+    max-height: max-content;
+    display: flex;
+    align-items: center;
+  }
+.breadcrumbs{
+    display: flex;
+    padding: 0 0 0 rem(0px);
+    & li{
+        list-style-type: none;
+        margin-right: 8px;
+        font-size: rem(14px);
+        font-weight: 400;
+    }
+}
+.grey{
+    color: $greyOne;
+}
+.black{
+    color: $black
+}
+  .breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #000000;
+    font-size: rem(12px);
+    content: "/";
+  }
+.project__content {
+    display: flex;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.shadow{
+    box-shadow: 5px 15px 35px rgba(0, 0, 0, 0.08);
+}
+.project__menu {
+    max-width: rem(246px);
+    width: 100%;
+    // max-height: rem(128px);
+    // min-height: rem(128px);
+    height: 100%;
+    padding: rem(20px);
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    & nav{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 rem(10px) 0;
+        &:last-child{
+            margin: 0 0 0 0;
+        }
+    }
+    
+    & a {
+        color: $black;
+        line-height: rem(20px);
+    }
+    @include tablet{
+        display: none;
+    }
+}
+// .active{
+//     font-weight: 700;
+// }
+.active__item{
+    background: rgba(0, 140, 255, 0.1);
+    border-radius: rem(30px);
+}
+.project__menu_mobile{
+    display: none;
+    @include tablet{
+        display: inline-block;
+    }
+}
+.select{
+    position: relative;
+    display: none;
+    @include tablet {
+        display: block;
+    }
+}
+.select__body{
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: rem(10px);
+    margin: rem(4px) 0 0 0;
+    border: 1px solid #D1D1D1;
+    position: absolute;
+    border-radius: 30px;
+    display: none;
+    height: max-content;
+    background-color: #ffffff;
+}
+
+.select.is-active .select__body{
+    display: block;
+    
+}
+.school__select_head_svg.is-active{
+    transform: rotate(180deg);
+}
+.select__item{
+    display: flex;
+    height: rem(38px);
+    padding: 0 rem(20px);
+    align-items: center;
+    font-size: rem(15px);
+}
+.select__header{
+    display: flex;
+    border: 1px solid #D1D1D1;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 rem(25px);
+    height: 52px;
+    background-color: #ffffff;
+}
+.select__icon{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    text-align: center;
+    justify-content: center;
+    &.is-active{
+        transform: rotate(180deg);
+    }
+}
+
+.select__current{
+    font-size: rem(15px);
+    line-height: 24px;
+    padding: 8px;
+}
+.project__info {
+    margin: 0 0 0 rem(45px);
+    max-width: rem(940px);
+    min-width:  rem(330px);
+    width: 100%;
+    @include tablet{
+        max-width: rem(900px);
+        min-width:  rem(330px);
+        width: 100%;
+        margin: 0;
+    }
+}
+.project__header {
+    font-size: rem(26px);
+    font-weight: 700;
+    margin: 0 0 rem(20px) 0;
+    line-height: rem(54px);
+    @include tablet{
+        margin: rem(16px) 0 rem(16px) 0;
+        line-height: rem(34px);
+        & h1{
+            font-size: rem(28px);
+        }
+    }
+}
+.project__text {
+    & p {
+        margin: 0 0 rem(16px) 0;
+        @include tablet{
+            font-size: rem(14px);
+            line-height: rem(20px);
+        }
+    }
+}
+.project__email{
+    display: flex;
+    width: rem(624px);
+    justify-content: space-between;
+    padding: rem(8px) 0 0 0;
+    @include tablet{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+.project__email_one {
+    max-width: rem(300px);
+    width: 100%;
+}
+.email__text {
+    color: $greyOne;
+    margin: 0 0 rem(8px) 0;
+}
+.email__link {
+    & a {
+        color: $black;
+    }
+}
+.project__email_two {
+    max-width: rem(300px);
+    width: 100%;
+    @include tablet{
+        margin: rem(12px) 0 0 0;
+    }
+}
